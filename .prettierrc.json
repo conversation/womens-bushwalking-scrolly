@@ -1,0 +1,8 @@
+{
+  "plugins": ["prettier-plugin-tailwindcss"],
+  "bracketSameLine": true,
+  "trailingComma": "all",
+  "tabWidth": 2,
+  "semi": false,
+  "htmlWhitespaceSensitivity": "css"
+}

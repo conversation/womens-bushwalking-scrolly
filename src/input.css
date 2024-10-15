@@ -1,0 +1,321 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .standard_width {
+    @apply mx-auto w-[min(calc(100%-40px),750px)];
+  }
+
+  .make_visible {
+    @apply opacity-100;
+  }
+}
+
+@layer components {
+  /* --------- Article styling --------- */
+
+  article {
+    @apply prose prose-lg prose-dark relative max-w-none font-body md:prose-xl prose-h2:font-base prose-figure:mx-auto prose-figure:w-screen prose-figcaption:px-[20px] prose-figcaption:text-xs prose-img:object-cover sm:prose-figcaption:text-sm md:prose-figure:w-[min(calc(100%-40px),750px)] md:prose-figcaption:px-0 2xl:prose-figure:mx-auto 2xl:prose-figure:w-[1000px] 2xl:prose-figcaption:mx-auto 2xl:prose-figcaption:max-w-[800px];
+  }
+
+  .drop_cap::first-letter {
+    @apply float-left m-[-0.1em_0.1em_0.1em_0em] text-8xl leading-[0.65] md:m-[0.3em_0.1em_0.1em_0em] md:leading-[0.05];
+  }
+
+  .drop_cap {
+    @apply mt-12;
+  }
+
+  .prose > *:not(.not-prose):not(hr):not(figure) {
+    @apply mx-auto w-[min(calc(100%-40px),750px)] 2xl:w-[800px];
+  }
+  .prose > figure > img {
+    @apply w-full;
+  }
+
+  body:has(.prose-light) {
+    @apply bg-neutral-50;
+  }
+  body:has(.prose-dark) {
+    @apply bg-neutral-800;
+  }
+
+  /* --------- Pinned section --------- */
+
+  .pinned_section {
+    @apply relative grid min-h-screen w-full text-lg md:text-xl;
+  }
+
+  /* Apply bottom margin if the next sibling isn't also a pinned_section */
+  .pinned_section:not(:has(+ .pinned_section)) {
+    @apply mb-14;
+  }
+
+  /* Apple top margin if the previous sibling isn't also pinned_section or section element */
+  .pinned_section:not(:has(+ .pinned_section)):not(
+      section + .pinned_section
+    ):not(.pinned_section + .pinned_section) {
+    @apply mt-14;
+  }
+
+  .pin_block .pinned_background {
+    @apply sticky top-0 h-screen;
+  }
+
+  .pin_clipped .pinned_background_wrapper {
+    @apply fixed top-0 h-full w-full transform-gpu;
+  }
+
+  .pin_clipped .pinned_background {
+    @apply absolute h-full [-webkitclip-path:inset(0px_0px)] [clip-path:inset(0px_0px)];
+  }
+
+  /* ----- FOR THE PINNED FOREGROUND ----- */
+
+  .pinned_foreground {
+    @apply pointer-events-none relative col-start-1 row-start-1 flex flex-col items-center text-pretty text-white;
+  }
+
+  .pinned_foreground a {
+    @apply cursor-pointer text-article-text underline;
+  }
+
+  .pinned_foreground a:hover {
+    @apply text-article-link_hover_article;
+  }
+
+  .chapter_wrapper {
+    @apply pointer-events-none flex h-screen w-full flex-col justify-center;
+  }
+
+  .chapter_wrapper > p {
+    @apply pointer-events-auto bg-[rgba(0,0,0,0.6)] p-5 backdrop-blur-sm;
+  }
+
+  .chapter_wrapper.chapter_right {
+    @apply items-center md:items-end;
+  }
+  .chapter_wrapper.chapter_right p {
+    @apply text-center md:max-w-[50%];
+  }
+
+  .chapter_wrapper.chapter_left {
+    @apply items-center md:items-start;
+  }
+  .chapter_wrapper.chapter_left > p {
+    @apply text-center md:max-w-[50%];
+  }
+
+  .chapter_wrapper.chapter_center {
+    @apply items-center;
+  }
+  .chapter_wrapper.chapter_center > p {
+    @apply text-center md:max-w-[80%];
+  }
+
+  /* ----- FOR THE PINNED BACKGROUND  ----- */
+
+  .pinned_background {
+    @apply left-0 top-0 col-start-1 row-start-1 w-full;
+  }
+
+  .pinned_background_wrapper {
+    @apply absolute top-0 w-full;
+  }
+
+  .full_screen_media {
+    @apply absolute left-0 top-0 h-screen w-full object-cover object-[50%_0%] opacity-0 transition-opacity duration-[0.8s] ease-in-out;
+  }
+
+  .pinned_figcaptions {
+    @apply absolute left-0 top-full z-50 block h-6 w-fit -translate-y-6 text-nowrap bg-neutral-900/40 px-2 pt-1 text-white opacity-100;
+  }
+}
+
+@layer base {
+  @font-face {
+    font-family: Libre Baskerville;
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src:
+      local("Libre Baskerville Italic"),
+      local("LibreBaskervilleItalic"),
+      url(https://cdn.theconversation.com/_next/static/media/libre-baskerville-style-italic-weight-400-latin-ext.85514b24.woff2)
+        format("woff2");
+    unicode-range: u+0100-024f, u+0259, u+1e??, u+2020, u+20a0-20ab, u+20ad-20cf,
+      u+2113, u+2c60-2c7f, u+a720-a7ff;
+  }
+
+  @font-face {
+    font-family: Libre Baskerville;
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src:
+      local("Libre Baskerville Italic"),
+      local("LibreBaskervilleItalic"),
+      url(https://cdn.theconversation.com/_next/static/media/libre-baskerville-style-italic-weight-400-latin.88dcecf9.woff2)
+        format("woff2");
+    unicode-range: u+00??, u+0131, u+0152-0153, u+02bb-02bc, u+02c6, u+02da,
+      u+02dc, u+2000-206f, u+2074, u+20ac, u+2122, u+2191, u+2193, u+2212,
+      u+2215, u+feff, u+fffd;
+  }
+
+  @font-face {
+    font-family: Libre Baskerville;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src:
+      local("Libre Baskerville"),
+      local("LibreBaskerville"),
+      url(https://cdn.theconversation.com/_next/static/media/libre-baskerville-style-normal-weight-400-latin-ext.3e020463.woff2)
+        format("woff2");
+    unicode-range: u+0100-024f, u+0259, u+1e??, u+2020, u+20a0-20ab, u+20ad-20cf,
+      u+2113, u+2c60-2c7f, u+a720-a7ff;
+  }
+
+  @font-face {
+    font-family: Libre Baskerville;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src:
+      local("Libre Baskerville"),
+      local("LibreBaskerville"),
+      url(https://cdn.theconversation.com/_next/static/media/libre-baskerville-style-normal-weight-400-latin.640ece80.woff2)
+        format("woff2");
+    unicode-range: u+00??, u+0131, u+0152-0153, u+02bb-02bc, u+02c6, u+02da,
+      u+02dc, u+2000-206f, u+2074, u+20ac, u+2122, u+2191, u+2193, u+2212,
+      u+2215, u+feff, u+fffd;
+  }
+
+  @font-face {
+    font-family: Libre Baskerville;
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src:
+      local("Libre Baskervill Bold"),
+      local("LibreBaskervilleBold"),
+      url(https://cdn.theconversation.com/_next/static/media/libre-baskerville-style-normal-weight-700-latin-ext.6ed04a86.woff2)
+        format("woff2");
+    unicode-range: u+0100-024f, u+0259, u+1e??, u+2020, u+20a0-20ab, u+20ad-20cf,
+      u+2113, u+2c60-2c7f, u+a720-a7ff;
+  }
+
+  @font-face {
+    font-family: Libre Baskerville;
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src:
+      local("Libre Baskerville Bold"),
+      local("LibreBaskervilleBold"),
+      url(https://cdn.theconversation.com/_next/static/media/libre-baskerville-style-normal-weight-700-latin.d5fafdc7.woff2)
+        format("woff2");
+    unicode-range: u+00??, u+0131, u+0152-0153, u+02bb-02bc, u+02c6, u+02da,
+      u+02dc, u+2000-206f, u+2074, u+20ac, u+2122, u+2191, u+2193, u+2212,
+      u+2215, u+feff, u+fffd;
+  }
+
+  @font-face {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src:
+      local("Montserrat Regular"),
+      local("MontserratRegular"),
+      url(https://cdn.theconversation.com/_next/static/media/montserrat-style-normal-weight-500-latin-ext.e1411e0a.woff2)
+        format("woff2");
+    unicode-range: u+0100-024f, u+0259, u+1e??, u+2020, u+20a0-20ab, u+20ad-20cf,
+      u+2113, u+2c60-2c7f, u+a720-a7ff;
+  }
+
+  @font-face {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src:
+      local("Montserrat Regular"),
+      local("MontserratRegular"),
+      url(https://cdn.theconversation.com/_next/static/media/montserrat-style-normal-weight-500-latin.f23ca911.woff2)
+        format("woff2");
+    unicode-range: u+00??, u+0131, u+0152-0153, u+02bb-02bc, u+02c6, u+02da,
+      u+02dc, u+2000-206f, u+2074, u+20ac, u+2122, u+2191, u+2193, u+2212,
+      u+2215, u+feff, u+fffd;
+  }
+
+  @font-face {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src:
+      local("Montserrat Bold"),
+      local("MontserratBold"),
+      url(https://cdn.theconversation.com/_next/static/media/montserrat-style-normal-weight-700-latin-ext.da2ba7e2.woff2)
+        format("woff2");
+    unicode-range: u+0100-024f, u+0259, u+1e??, u+2020, u+20a0-20ab, u+20ad-20cf,
+      u+2113, u+2c60-2c7f, u+a720-a7ff;
+  }
+
+  @font-face {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src:
+      local("Montserrat Bold"),
+      local("MontserratBold"),
+      url(https://cdn.theconversation.com/_next/static/media/montserrat-style-normal-weight-700-latin.387f0342.woff2)
+        format("woff2");
+    unicode-range: u+00??, u+0131, u+0152-0153, u+02bb-02bc, u+02c6, u+02da,
+      u+02dc, u+2000-206f, u+2074, u+20ac, u+2122, u+2191, u+2193, u+2212,
+      u+2215, u+feff, u+fffd;
+  }
+
+  @font-face {
+    font-family: Libre-Baskerville-fallback;
+    font-style: normal;
+    font-weight: 400;
+    size-adjust: 115%;
+    src: local("Georgia");
+  }
+
+  @font-face {
+    font-family: Libre-Baskerville-fallback;
+    font-style: italic;
+    font-weight: 400;
+    size-adjust: 105%;
+    src: local("Georgia Italic");
+  }
+
+  @font-face {
+    font-family: Libre-Baskerville-fallback;
+    font-style: normal;
+    font-weight: 700;
+    size-adjust: 115%;
+    src: local("Georgia");
+  }
+
+  @font-face {
+    font-family: Montserrat-fallback;
+    font-style: normal;
+    font-weight: 700;
+    size-adjust: 95%;
+    src: local("Verdana Bold");
+  }
+
+  @font-face {
+    font-family: Montserrat-fallback;
+    font-style: normal;
+    font-weight: 400;
+    size-adjust: 105%;
+    src: local("Verdana");
+  }
+}
