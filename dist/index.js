@@ -1,32 +1,31 @@
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger)
 
 document.addEventListener("DOMContentLoaded", () => {
-  function transitionImages() {
-    let section = "#firstSection"; // section selector (id or class)
-    const steps = gsap.utils.toArray(`${section} .step`);
-    const images = gsap.utils.toArray(`${section} img`);
+  function transitionImages(section) {
+    const steps = document.querySelectorAll(`${section} .step`)
+    const images = document.querySelectorAll(`${section} img`)
 
     steps.forEach((step, index) => {
-      let image = images[index + 1];
+      let image = images[index + 1]
 
       ScrollTrigger.create({
         trigger: step,
-        start: `top 90%`,
+        start: "top 90%",
         onEnter: () => {
-          image.classList.add("make_visible");
+          image.classList.add("make_visible")
         },
         onLeaveBack: () => {
-          image.classList.remove("make_visible");
+          image.classList.remove("make_visible")
         },
-      });
-    });
+      })
+    })
   }
 
-  transitionImages();
+  transitionImages("#firstSection")
 
   document.querySelectorAll('img[loading="lazy"]').forEach((img) => {
     img.addEventListener("load", function () {
-      ScrollTrigger.refresh();
-    });
-  });
-});
+      ScrollTrigger.refresh()
+    })
+  })
+})
