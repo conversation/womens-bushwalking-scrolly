@@ -99,9 +99,13 @@
     </header>
 
     <article>
-      <section class="not-prose mb-14 bg-neutral-900">
+      <section class="not-prose relative mb-14 bg-neutral-900">
         <div
-          class="relative grid h-screen grid-rows-8 place-items-center [clip-path:inset(0px)] sm:bg-center lg:grid-cols-[minmax(auto,60vw)]">
+          class="sticky top-[calc(100%-1rem)] z-50 ml-auto mr-4 w-max bg-neutral-800 px-2 text-[10px] opacity-50">
+          Source: State Library of Victoria
+        </div>
+        <div
+          class="relative grid h-screen [clip-path:inset(0px)] sm:bg-center md:place-items-start lg:grid-cols-[minmax(auto,60vw)]">
           <figure class="fixed top-0 h-full w-full">
             <picture>
               <source
@@ -156,7 +160,7 @@
             </picture>
             <figcaption></figcaption>
           </figure>
-          <div class="row-start-3 max-w-[910px] px-5 md:pl-10">
+          <div class="mt-[15vh] max-w-[910px] px-5 md:pl-10">
             <span
               class="bg-white font-base text-4xl font-black !leading-[1.2] text-indigo-800 drop-shadow-md sm:mb-4 sm:text-6xl lg:text-7xl">
               Women weren't always welcome on the bushwalking track
@@ -235,15 +239,17 @@
             <figcaption></figcaption>
           </figure>
 
-          <p class="drop_cap relative pl-5 md:pl-10">
-            Australians love a good bushwalk. It offers a chance to explore
-            beautiful
+          <p class="relative pl-5 md:pl-10">
+            <span class="drop_cap">A</span>ustralians love a good bushwalk. It
+            offers a chance to explore beautiful
             <a
+              class="underline hover:text-neutral-100"
               href="https://theconversation.com/thousands-of-visitors-flock-to-australias-national-parks-each-year-and-many-take-silly-risks-how-do-we-keep-people-safe-220659">
               national parks</a
             >, stretch our legs, and build friendships with fellow walkers. It’s
             even good for our
             <a
+              class="underline hover:text-neutral-100"
               href="https://www.sbs.com.au/language/english/en/podcast-episode/the-power-of-walking-in-nature-bushwalking-in-australia/ydrpp0jpo">
               mental health</a
             >. But women weren’t always welcome on the bushwalking track.

@@ -19,12 +19,8 @@
     @apply prose prose-lg prose-dark relative max-w-none font-body md:prose-xl prose-h2:font-base prose-figure:mx-auto prose-figure:w-screen prose-figcaption:px-[20px] prose-figcaption:text-xs prose-img:object-cover sm:prose-figcaption:text-sm md:prose-figure:w-[min(calc(100%-40px),750px)] md:prose-figcaption:px-0 2xl:prose-figure:mx-auto 2xl:prose-figure:w-[1000px] 2xl:prose-figcaption:mx-auto 2xl:prose-figcaption:max-w-[800px];
   }
 
-  .drop_cap::first-letter {
-    @apply float-left m-[-0.1em_0.1em_0.1em_0em] text-8xl leading-[0.65] md:m-[0.3em_0.1em_0.1em_0em] md:leading-[0.05];
-  }
-
   .drop_cap {
-    @apply mt-12;
+    @apply float-left -mb-2 -mt-2 pr-2 text-[5rem] leading-none;
   }
 
   .prose > *:not(.not-prose):not(hr):not(figure) {
@@ -64,11 +60,11 @@
   }
 
   .pin_clipped .pinned_background_wrapper {
-    @apply fixed top-0 h-full w-full transform-gpu;
+    @apply fixed top-0 h-screen w-full transform-gpu;
   }
 
   .pin_clipped .pinned_background {
-    @apply absolute h-full [-webkitclip-path:inset(0px_0px)] [clip-path:inset(0px_0px)];
+    @apply absolute h-screen [-webkitclip-path:inset(0px_0px)] [clip-path:inset(0px_0px)];
   }
 
   /* ----- FOR THE PINNED FOREGROUND ----- */
