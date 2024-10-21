@@ -23,6 +23,50 @@ document.addEventListener("DOMContentLoaded", () => {
 
   transitionImages("#firstSection")
 
+  function typeWriterEffect() {
+    const typing = document.querySelectorAll(".typewriter")
+    let opacityAmount = 30
+
+    function type(element) {
+      function randomOpacity() {
+        return (
+          (Math.floor(Math.random() * opacityAmount) + (100 - opacityAmount)) /
+          100
+        )
+      }
+
+      function randomEms() {
+        if (Math.random() > 0.8) {
+          return (Math.floor(Math.random() * 100) - 50) / 800
+        } else {
+          return 0
+        }
+      }
+
+      function wrap(char) {
+        return (
+          '<span style="opacity:' +
+          randomOpacity() +
+          "; text-shadow:" +
+          randomEms() +
+          "em " +
+          randomEms() +
+          'em currentColor;">' +
+          char +
+          "</span>"
+        )
+      }
+
+      const wrappedText = Array.from(element.textContent).map(wrap)
+
+      element.innerHTML = wrappedText.join("")
+    }
+
+    typing.forEach(type)
+  }
+
+  typeWriterEffect()
+
   document.querySelectorAll('img[loading="lazy"]').forEach((img) => {
     img.addEventListener("load", function () {
       ScrollTrigger.refresh()

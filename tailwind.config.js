@@ -89,6 +89,7 @@ module.exports = {
     fontFamily: {
       base: '"Montserrat", "Helvetica Neue", "Helvetica", sans-serif',
       body: '"Libre Baskerville", serif',
+      mono: '"Courier New", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;',
     },
     extend: {
       typography: ({ theme }) => ({

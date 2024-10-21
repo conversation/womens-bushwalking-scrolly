@@ -10,13 +10,39 @@
   .make_visible {
     @apply opacity-100;
   }
+
+  .imgfloat-right {
+    @apply float-right mb-8 mt-0 md:ml-4 md:mr-[calc((100%-750px)/2)] md:w-[calc(750px/2)] 2xl:md:w-[calc(800px/2)] 2xl:mr-[calc((100%-800px)/2)];
+  }
+
+  .imgfloat-right figcaption,
+  .imgfloat-left figcaption {
+    @apply !max-w-none;
+  }
+
+  .imgfloat-left {
+    @apply float-left mb-8 mt-0 md:ml-[calc((100%-750px)/2)] md:mr-4 md:w-[calc(750px/2)] 2xl:md:w-[calc(800px/2)] 2xl:ml-[calc((100%-800px)/2)];
+  }
+
+  @media screen and (min-width: 768px) {
+    img:not(.pinned_background img):not(aside img) {
+      mask:
+        radial-gradient(circle 30px at top left, #0000 98%, #000) top left,
+        radial-gradient(circle 30px at top right, #0000 98%, #000) top right,
+        radial-gradient(circle 30px at bottom left, #0000 98%, #000) bottom left,
+        radial-gradient(circle 30px at bottom right, #0000 98%, #000) bottom
+          right;
+      mask-size: 51% 51%;
+      mask-repeat: no-repeat;
+    }
+  }
 }
 
 @layer components {
   /* --------- Article styling --------- */
 
   article {
-    @apply prose prose-lg prose-dark relative max-w-none font-body md:prose-xl prose-h2:font-base prose-figure:mx-auto prose-figure:w-screen prose-figcaption:px-[20px] prose-figcaption:text-xs prose-img:object-cover sm:prose-figcaption:text-sm md:prose-figure:w-[min(calc(100%-40px),750px)] md:prose-figcaption:px-0 2xl:prose-figure:mx-auto 2xl:prose-figure:w-[1000px] 2xl:prose-figcaption:mx-auto 2xl:prose-figcaption:max-w-[800px];
+    @apply prose prose-lg prose-dark relative max-w-none font-body md:prose-xl prose-h2:clear-both prose-h2:font-base prose-figure:mx-auto prose-figure:w-screen prose-figcaption:px-[20px] prose-figcaption:text-xs prose-img:object-cover sm:prose-figcaption:text-sm md:prose-figure:w-[min(calc(100%-40px),900px)] md:prose-figcaption:mx-auto md:prose-figcaption:max-w-[min(calc(100%-40px),750px)] md:prose-figcaption:px-0 2xl:prose-figure:mx-auto 2xl:prose-figure:w-[1000px] 2xl:prose-figcaption:mx-auto 2xl:prose-figcaption:max-w-[800px];
   }
 
   .drop_cap {
@@ -64,7 +90,7 @@
   }
 
   .pin_clipped .pinned_background {
-    @apply absolute h-screen [-webkitclip-path:inset(0px_0px)] [clip-path:inset(0px_0px)];
+    @apply absolute h-full [-webkitclip-path:inset(0px_0px)] [clip-path:inset(0px_0px)];
   }
 
   /* ----- FOR THE PINNED FOREGROUND ----- */
