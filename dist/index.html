@@ -29,14 +29,14 @@
 
     <!-- LIBRARIES -->
     <script
-      preload
+      defer
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script
-      preload
+      defer
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 
     <!-- Scripts -->
-    <script src="./index.js"></script>
+    <script defer src="./index.js"></script>
   </head>
   <body class="overflow-x-hidden overscroll-none">
     <header class="absolute z-50 w-full bg-neutral-900 px-4 py-2">
@@ -161,7 +161,7 @@
                 type="image/jpeg" />
               <img
                 class="h-screen w-full object-cover object-[20%_0%] sm:object-center"
-                src="https://images.theconversation.com/files/625822/original/file-20241015-15-vgjdn8.jpg?ixlib=rb-4.1.0&auto=format&fit=crop&usm=12&q=45&dpr=1&w=2100&h=1181"
+                src="https://images.theconversation.com/files/625822/original/file-20241015-15-vgjdn8.jpg?ixlib=rb-4.1.0&auto=format&fit=crop&usm=12&q=45&dpr=1&w=600"
                 alt="" />
             </picture>
             <figcaption></figcaption>
@@ -240,7 +240,7 @@
                 type="image/jpeg" />
               <img
                 class="h-screen w-full object-cover object-[20%_0%] sm:object-center"
-                src="https://images.theconversation.com/files/625821/original/file-20241015-15-owf6vg.jpg?ixlib=rb-4.1.0&auto=format&fit=crop&usm=12&q=45&dpr=1&w=2100&h=1181"
+                src="https://images.theconversation.com/files/625821/original/file-20241015-15-owf6vg.jpg?ixlib=rb-4.1.0&auto=format&fit=crop&usm=12&q=45&dpr=1&w=600"
                 alt="" />
             </picture>
             <figcaption></figcaption>
@@ -822,7 +822,7 @@
 
       <h2>Challenging journeys</h2>
 
-      <figure class="imgfloat-right">
+      <figure class="imgfloat-left lg:imgfloat-right">
         <img
           loading="lazy"
           alt="Two women sitting on edge of cliff"
@@ -847,14 +847,6 @@
       <p>Like today, bushwalking in the 1920s and 30s could be difficult.</p>
 
       <p>
-        One club member, Margery Luth, wrote in the club’s journal of a
-        particularly challenging walk to Mount Buller in 1938. On the way to the
-        start of the walk, their bus broke down. As they were walking, a
-        hailstorm hit. They stopped overnight to sleep in a shed, and it leaked.
-        Luth, however, was delighted, saying
-      </p>
-
-      <p>
         One club member, Margery Luth, recounted in the club’s journal a
         particularly challenging walk to Mount Buller in 1938. Their bus broke
         down on the way to the walk. As they hiked, a hailstorm hit. And when
@@ -864,7 +856,7 @@
       </p>
 
       <div
-        class="not-prose standard_width clear-both mx-auto my-14 rounded-r-lg border-l-4 px-5">
+        class="not-prose standard_width clear-both mx-auto my-14 rounded-r-lg border-l-4 px-5 lg:clear-none">
         <p class="typewriter font-mono leading-loose">
           It was a heavenly night… all the beauty of the bush was visible, the
           feathery foliage of the wattles, the sparkle of the gum leaves, the
@@ -899,6 +891,13 @@
         <figcaption></figcaption>
       </figure>
 
+      <p>
+        And tragically, on a fateful bushwalk in 1937, one club member died
+        after an accident.
+        <a href="http://nla.gov.au/nla.news-page6196370">Olive Sandell</a> fell
+        and hit her head during a walk in the Cathedral Ranges.
+      </p>
+
       <figure class="imgfloat-right !ml-6 !mt-0">
         <img
           loading="lazy"
@@ -921,16 +920,33 @@
       </figure>
 
       <p>
-        And tragically, on a fateful bushwalk in 1937, one club member died
-        after an accident.
-        <a href="http://nla.gov.au/nla.news-page6196370">Olive Sandell</a> fell
-        and hit her head during a walk in the Cathedral Ranges. Her devastated
-        friend Molly Levvy later wrote a moving poem in memory of Sandell. It
-        concluded:
+        Her devastated friend Molly Levvy later wrote a moving poem in memory of
+        Sandell. It concluded:
       </p>
 
+      <!-- <figure class="imgfloat-right !ml-6 !mt-0 md:hidden">
+        <img
+          loading="lazy"
+          alt="Olive Sandell"
+          sizes="(max-width: 599px) 100vw, (min-width: 600px) and (max-width: 1535px) 750px, (min-width: 1536px) 800px"
+          srcset="
+            https://images.theconversation.com/files/626909/original/file-20241021-15-45njjw.jpg?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=1  600w,
+            https://images.theconversation.com/files/626909/original/file-20241021-15-45njjw.jpg?ixlib=rb-4.1.0&amp;q=30&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=2 1200w,
+            https://images.theconversation.com/files/626909/original/file-20241021-15-45njjw.jpg?ixlib=rb-4.1.0&amp;q=15&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=3 1800w,
+            https://images.theconversation.com/files/626909/original/file-20241021-15-45njjw.jpg?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=750&amp;fit=crop&amp;dpr=1  750w,
+            https://images.theconversation.com/files/626909/original/file-20241021-15-45njjw.jpg?ixlib=rb-4.1.0&amp;q=30&amp;auto=format,compress&amp;cs=srgb&amp;w=800&amp;fit=crop&amp;dpr=2 1508w,
+            https://images.theconversation.com/files/626909/original/file-20241021-15-45njjw.jpg?ixlib=rb-4.1.0&amp;q=15&amp;auto=format,compress&amp;cs=srgb&amp;w=800&amp;fit=crop&amp;dpr=3 2262w
+          "
+          src="https://images.theconversation.com/files/626909/original/file-20241021-15-45njjw.jpg?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=800&amp;fit=crop&amp;dpr=2" />
+
+        <figcaption>
+          Olive Sandell died after falling from a cliff &#183;
+          <span>State Library of Victoria</span>
+        </figcaption>
+      </figure> -->
+
       <div
-        class="not-prose standard_width clear-both mx-auto my-14 rounded-r-lg border-l-4 px-5">
+        class="not-prose standard_width clear-both mx-auto mb-14 mt-10 rounded-r-lg border-l-4 px-5 md:clear-none">
         <p class="typewriter text-justify font-mono leading-loose">
           And I keep in mind the wonderful thought
         </p>
@@ -995,7 +1011,7 @@
         women’s disregard for convention, others were highly critical.
       </p>
 
-      <figure class="imgfloat-right">
+      <figure class="imgfloat-left">
         <img
           class="clean_img"
           loading="lazy"
@@ -1033,21 +1049,6 @@
         Other critics accused the women of attention-seeking or simply
         <a href="http://nla.gov.au/nla.news-article4462852">following a fad</a>.
       </p>
-
-      <!-- <div
-        class="not-prose standard_width mx-auto my-14 rounded-r-lg border-l-4 px-5">
-        <p class="typewriter text-justify font-mono leading-loose">
-          Then comes the ordeal of the Railway Station. “Where to today, Miss?”
-          from the porter. “Bet you don’t look so frisky when I see you tonight,
-          ho ho!” Then the hopeful glances, as the train slows down, for a
-          friendly face and a hasty last-minute entrance into the nearest
-          compartment, usually resulting in sticking in the doorway with your
-          pack, and finally a lurching stagger over everyone’s toes to a seat
-          opposite, more often than not, an exquisitely dressed young thing
-          bound for Church.
-        </p>
-        <p class="pt-4 font-base">- "Blossom" (member)</p>
-      </div> -->
 
       <p>
         The women often attracted unwelcome attention and lewd comments,
@@ -1116,6 +1117,24 @@
         the protection of the natural spaces we enjoy today.
       </p>
 
+      <figure class="imgfloat-left">
+        <img
+          loading="lazy"
+          alt=""
+          sizes="(max-width: 599px) 100vw, (min-width: 600px) and (max-width: 1535px) 750px, (min-width: 1536px) 800px"
+          srcset="
+            https://images.theconversation.com/files/627238/original/file-20241022-18-eyqy2f.png?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=1  600w,
+            https://images.theconversation.com/files/627238/original/file-20241022-18-eyqy2f.png?ixlib=rb-4.1.0&amp;q=30&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=2 1200w,
+            https://images.theconversation.com/files/627238/original/file-20241022-18-eyqy2f.png?ixlib=rb-4.1.0&amp;q=15&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=3 1800w,
+            https://images.theconversation.com/files/627238/original/file-20241022-18-eyqy2f.png?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=750&amp;fit=crop&amp;dpr=1  750w,
+            https://images.theconversation.com/files/627238/original/file-20241022-18-eyqy2f.png?ixlib=rb-4.1.0&amp;q=30&amp;auto=format,compress&amp;cs=srgb&amp;w=800&amp;fit=crop&amp;dpr=2 1508w,
+            https://images.theconversation.com/files/627238/original/file-20241022-18-eyqy2f.png?ixlib=rb-4.1.0&amp;q=15&amp;auto=format,compress&amp;cs=srgb&amp;w=800&amp;fit=crop&amp;dpr=3 2262w
+          "
+          src="https://images.theconversation.com/files/627238/original/file-20241022-18-eyqy2f.png?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=800&amp;fit=crop&amp;dpr=2" />
+
+        <figcaption></figcaption>
+      </figure>
+
       <p>
         For example Jean Blackburn, an enthusiastic club member from 1934 until
         her death in 1983, played a leading role in the creation of national
@@ -1134,9 +1153,9 @@
         bushwalking track – and paved the way for generations to follow.
       </p>
 
-      <hr class="-mb-2 w-full max-w-none" />
+      <hr class="clear-both -mb-2 w-full max-w-none" />
 
-      <aside class="grid max-w-none text-sm">
+      <aside class="clear-both grid max-w-none text-sm">
         <!-- Authors & Editors -->
         <div class="grid gap-0 sm:grid-cols-2 sm:gap-8">
           <!-- Authors -->

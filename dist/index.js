@@ -1,6 +1,6 @@
-gsap.registerPlugin(ScrollTrigger)
-
 document.addEventListener("DOMContentLoaded", () => {
+  gsap.registerPlugin(ScrollTrigger)
+
   function transitionImages(section) {
     const steps = document.querySelectorAll(`${section} .step`)
     const images = document.querySelectorAll(`${section} figure`)
