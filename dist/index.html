@@ -28,8 +28,12 @@
     <link rel="stylesheet" href="./style.css" />
 
     <!-- LIBRARIES -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script
+      preload
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script
+      preload
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 
     <!-- Scripts -->
     <script src="./index.js"></script>
@@ -101,14 +105,14 @@
     </header>
 
     <article>
-      <section class="not-prose relative mb-14 bg-neutral-900">
+      <section class="not-prose relative bg-neutral-900">
         <div
           class="sticky top-[calc(100%-1rem)] z-50 ml-auto mr-4 w-max bg-neutral-800 px-2 text-[10px] opacity-50">
           Source: State Library of Victoria
         </div>
         <div
           class="relative grid h-screen [clip-path:inset(0px)] sm:bg-center md:place-items-start lg:grid-cols-[minmax(auto,60vw)]">
-          <figure class="fixed top-0 h-full w-full">
+          <figure class="fixed top-0 w-full">
             <picture>
               <source
                 media="(max-width: 699px)"
@@ -156,7 +160,7 @@
                 "
                 type="image/jpeg" />
               <img
-                class="h-full w-full object-cover object-[20%_0%] sm:object-center"
+                class="h-screen w-full object-cover object-[20%_0%] sm:object-center"
                 src="https://images.theconversation.com/files/625822/original/file-20241015-15-vgjdn8.jpg?ixlib=rb-4.1.0&auto=format&fit=crop&usm=12&q=45&dpr=1&w=2100&h=1181"
                 alt="" />
             </picture>
@@ -165,14 +169,9 @@
           <div class="mt-[15vh] max-w-[910px] px-5 md:pl-10">
             <span
               class="bg-white font-base text-4xl font-black !leading-[1.2] text-indigo-800 drop-shadow-md sm:mb-4 sm:text-5xl lg:text-6xl">
-              Women weren't always welcome on the bushwalking track
+              ‘The bush calls us': the extraordinary women who demanded a place
+              on the bushwalking track
             </span>
-
-            <!-- <span
-              class="bg-white font-base text-4xl font-black !leading-[1.2] text-indigo-800 drop-shadow-md sm:mb-4 sm:text-4xl lg:text-5xl">
-              "The Bush calls us & we laugh at discomforts, ignore perils and
-              hazards, and away we go.
-            </span> -->
 
             <p class="relative mt-4 w-max bg-indigo-800 p-2 text-sm">
               By
@@ -192,7 +191,7 @@
 
         <div
           class="relative grid h-screen grid-cols-1 place-items-center [clip-path:inset(0px)] sm:grid-cols-[minmax(auto,70vw)] sm:bg-center md:grid-cols-[minmax(auto,45vw)]">
-          <figure class="fixed top-0 h-full w-full opacity-65">
+          <figure class="fixed top-0 w-full opacity-65">
             <picture>
               <source
                 media="(max-width: 699px)"
@@ -240,7 +239,7 @@
                 "
                 type="image/jpeg" />
               <img
-                class="h-full w-full object-cover object-[20%_0%] sm:object-center"
+                class="h-screen w-full object-cover object-[20%_0%] sm:object-center"
                 src="https://images.theconversation.com/files/625821/original/file-20241015-15-owf6vg.jpg?ixlib=rb-4.1.0&auto=format&fit=crop&usm=12&q=45&dpr=1&w=2100&h=1181"
                 alt="" />
             </picture>
@@ -248,13 +247,15 @@
           </figure>
 
           <p class="relative pl-5 md:pl-10">
-            <span class="drop_cap">A</span>ustralians love walking in the bush.
-            It’s a chance to explore beautiful
+            <span class="drop_cap">M</span>any Australians feel drawn to explore
+            the bush on foot. Bushwalking offers a chance to escape the city,
+            forge friendships, explore beautiful
             <a
               class="underline hover:text-neutral-100"
               href="https://theconversation.com/thousands-of-visitors-flock-to-australias-national-parks-each-year-and-many-take-silly-risks-how-do-we-keep-people-safe-220659"
-              >national parks</a
-            >, build friendships and keep our bodies and
+              >scenery</a
+            >
+            and keep our bodies and
             <a
               class="underline hover:text-neutral-100"
               href="https://www.sbs.com.au/language/english/en/podcast-episode/the-power-of-walking-in-nature-bushwalking-in-australia/ydrpp0jpo"
@@ -269,209 +270,323 @@
         </div>
       </section>
 
-      <p>
-        In the 1920s and 30s, some people thought women weren’t cut out for
-        rugged encounters with nature. The bush was considered a place for men.
-        Besides, how could women walk rocky paths and steep hills in their long
-        skirts and impractical shoes?
-      </p>
-
-      <figure>
-        <img
-          loading="lazy"
-          alt="Bushwalking women crossing a creek in long skirts."
-          sizes="(max-width: 599px) 100vw, (min-width: 600px) and (max-width: 1535px) 750px, (min-width: 1536px) 800px"
-          srcset="
-            https://images.theconversation.com/files/626810/original/file-20241021-15-udl45r.jpg?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=1  600w,
-            https://images.theconversation.com/files/626810/original/file-20241021-15-udl45r.jpg?ixlib=rb-4.1.0&amp;q=30&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=2 1200w,
-            https://images.theconversation.com/files/626810/original/file-20241021-15-udl45r.jpg?ixlib=rb-4.1.0&amp;q=15&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=3 1800w,
-            https://images.theconversation.com/files/626810/original/file-20241021-15-udl45r.jpg?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=750&amp;fit=crop&amp;dpr=1  750w,
-            https://images.theconversation.com/files/626810/original/file-20241021-15-udl45r.jpg?ixlib=rb-4.1.0&amp;q=30&amp;auto=format,compress&amp;cs=srgb&amp;w=800&amp;fit=crop&amp;dpr=2 1508w,
-            https://images.theconversation.com/files/626810/original/file-20241021-15-udl45r.jpg?ixlib=rb-4.1.0&amp;q=15&amp;auto=format,compress&amp;cs=srgb&amp;w=800&amp;fit=crop&amp;dpr=3 2262w
-          "
-          src="https://images.theconversation.com/files/626810/original/file-20241021-15-udl45r.jpg?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=800&amp;fit=crop&amp;dpr=2" />
-
-        <figcaption>
-          Bushwalking women crossing a creek in long skirts. &#183;
-          <span>Melbourne Women’s Walking Club</span>
-        </figcaption>
-      </figure>
-
       <section class="pinned_section pin_block not-prose" id="firstSection">
         <div class="pinned_background">
           <div class="pinned_background_wrapper">
-            <figure class="">
+            <figure class="full_screen_media make_visible">
               <picture>
                 <source
                   media="(max-width: 699px)"
                   srcset="
-                    https://images.theconversation.com/files/626818/original/file-20241021-17-xyugsl.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.54&fp-y=0.50&q=10&dpr=2&w=700&h=933    700w,
-                    https://images.theconversation.com/files/626818/original/file-20241021-17-xyugsl.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.54&fp-y=0.50&q=10&dpr=2&w=960&h=1280   960w,
-                    https://images.theconversation.com/files/626818/original/file-20241021-17-xyugsl.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.54&fp-y=0.50&q=10&dpr=2&w=1400&h=1867 1400w,
-                    https://images.theconversation.com/files/626818/original/file-20241021-17-xyugsl.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.54&fp-y=0.50&q=10&dpr=2&w=2100&h=2800 2100w
+                    https://images.theconversation.com/files/627231/original/file-20241022-19-m7io1z.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.39&fp-y=0.50&q=10&dpr=2&w=700&h=933    700w,
+                    https://images.theconversation.com/files/627231/original/file-20241022-19-m7io1z.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.39&fp-y=0.50&q=10&dpr=2&w=960&h=1280   960w,
+                    https://images.theconversation.com/files/627231/original/file-20241022-19-m7io1z.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.39&fp-y=0.50&q=10&dpr=2&w=1400&h=1867 1400w,
+                    https://images.theconversation.com/files/627231/original/file-20241022-19-m7io1z.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.39&fp-y=0.50&q=10&dpr=2&w=2100&h=2800 2100w
                   "
                   type="image/jpeg" />
                 <source
                   media="(orientation: landscape) and (max-width: 979px)"
                   srcset="
-                    https://images.theconversation.com/files/626818/original/file-20241021-17-xyugsl.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=30&dpr=1&w=700&h=525    700w,
-                    https://images.theconversation.com/files/626818/original/file-20241021-17-xyugsl.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=30&dpr=1&w=960&h=720    960w,
-                    https://images.theconversation.com/files/626818/original/file-20241021-17-xyugsl.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=30&dpr=1&w=1400&h=1050 1400w,
-                    https://images.theconversation.com/files/626818/original/file-20241021-17-xyugsl.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=30&dpr=1&w=2100&h=1575 2100w
+                    https://images.theconversation.com/files/627231/original/file-20241022-19-m7io1z.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.56&fp-y=0.50&q=30&dpr=1&w=700&h=525    700w,
+                    https://images.theconversation.com/files/627231/original/file-20241022-19-m7io1z.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.56&fp-y=0.50&q=30&dpr=1&w=960&h=720    960w,
+                    https://images.theconversation.com/files/627231/original/file-20241022-19-m7io1z.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.56&fp-y=0.50&q=30&dpr=1&w=1400&h=1050 1400w,
+                    https://images.theconversation.com/files/627231/original/file-20241022-19-m7io1z.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.56&fp-y=0.50&q=30&dpr=1&w=2100&h=1575 2100w
                   "
                   type="image/jpeg" />
                 <source
                   media="(min-width: 700px) and (max-width: 979px)"
                   srcset="
-                    https://images.theconversation.com/files/626818/original/file-20241021-17-xyugsl.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=30&dpr=1&w=700&h=700    700w,
-                    https://images.theconversation.com/files/626818/original/file-20241021-17-xyugsl.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=30&dpr=1&w=960&h=960    960w,
-                    https://images.theconversation.com/files/626818/original/file-20241021-17-xyugsl.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=30&dpr=1&w=1400&h=1400 1400w,
-                    https://images.theconversation.com/files/626818/original/file-20241021-17-xyugsl.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=30&dpr=1&w=2100&h=2100 2100w
+                    https://images.theconversation.com/files/627231/original/file-20241022-19-m7io1z.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.46&fp-y=0.50&q=30&dpr=1&w=700&h=700    700w,
+                    https://images.theconversation.com/files/627231/original/file-20241022-19-m7io1z.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.46&fp-y=0.50&q=30&dpr=1&w=960&h=960    960w,
+                    https://images.theconversation.com/files/627231/original/file-20241022-19-m7io1z.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.46&fp-y=0.50&q=30&dpr=1&w=1400&h=1400 1400w,
+                    https://images.theconversation.com/files/627231/original/file-20241022-19-m7io1z.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.46&fp-y=0.50&q=30&dpr=1&w=2100&h=2100 2100w
                   "
                   type="image/jpeg" />
                 <source
                   media="(min-width: 980px) and (max-width: 1799px)"
                   srcset="
-                    https://images.theconversation.com/files/626818/original/file-20241021-17-xyugsl.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=45&dpr=1&w=700&h=394    700w,
-                    https://images.theconversation.com/files/626818/original/file-20241021-17-xyugsl.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=45&dpr=1&w=960&h=540    960w,
-                    https://images.theconversation.com/files/626818/original/file-20241021-17-xyugsl.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=45&dpr=1&w=1400&h=788  1400w,
-                    https://images.theconversation.com/files/626818/original/file-20241021-17-xyugsl.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=45&dpr=1&w=2100&h=1181 2100w
+                    https://images.theconversation.com/files/627231/original/file-20241022-19-m7io1z.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=45&dpr=1&w=700&h=394    700w,
+                    https://images.theconversation.com/files/627231/original/file-20241022-19-m7io1z.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=45&dpr=1&w=960&h=540    960w,
+                    https://images.theconversation.com/files/627231/original/file-20241022-19-m7io1z.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=45&dpr=1&w=1400&h=788  1400w,
+                    https://images.theconversation.com/files/627231/original/file-20241022-19-m7io1z.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=45&dpr=1&w=2100&h=1181 2100w
                   "
                   type="image/jpeg" />
                 <source
                   media="(min-width: 1800px)"
                   srcset="
-                    https://images.theconversation.com/files/626818/original/file-20241021-17-xyugsl.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=60&dpr=1&w=700&h=394    700w,
-                    https://images.theconversation.com/files/626818/original/file-20241021-17-xyugsl.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=60&dpr=1&w=960&h=540    960w,
-                    https://images.theconversation.com/files/626818/original/file-20241021-17-xyugsl.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=60&dpr=1&w=1400&h=788  1400w,
-                    https://images.theconversation.com/files/626818/original/file-20241021-17-xyugsl.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=60&dpr=1&w=2100&h=1181 2100w
+                    https://images.theconversation.com/files/627231/original/file-20241022-19-m7io1z.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=60&dpr=1&w=700&h=394    700w,
+                    https://images.theconversation.com/files/627231/original/file-20241022-19-m7io1z.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=60&dpr=1&w=960&h=540    960w,
+                    https://images.theconversation.com/files/627231/original/file-20241022-19-m7io1z.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=60&dpr=1&w=1400&h=788  1400w,
+                    https://images.theconversation.com/files/627231/original/file-20241022-19-m7io1z.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=60&dpr=1&w=2100&h=1181 2100w
                   "
                   type="image/jpeg" />
                 <img
                   loading="lazy"
-                  class="full_screen_media opacity-100"
-                  src="https://images.theconversation.com/files/626818/original/file-20241021-17-xyugsl.jpg?ixlib=rb-4.1.0&auto=format&fit=crop&usm=12&q=45&dpr=1&w=2100&h=1181"
+                  class=""
+                  src="https://images.theconversation.com/files/627231/original/file-20241022-19-m7io1z.jpg?ixlib=rb-4.1.0&auto=format&fit=crop&usm=12&q=45&dpr=1&w=2100&h=1181"
                   alt="" />
               </picture>
-              <figcaption></figcaption>
+              <figcaption><span>State Library Victoria</span></figcaption>
             </figure>
 
-            <figure class="">
+            <figure class="full_screen_media">
               <picture>
                 <source
                   media="(max-width: 699px)"
                   srcset="
-                    https://images.theconversation.com/files/626813/original/file-20241021-17-mm1imw.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.48&fp-y=0.54&q=10&dpr=2&w=700&h=933    700w,
-                    https://images.theconversation.com/files/626813/original/file-20241021-17-mm1imw.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.48&fp-y=0.54&q=10&dpr=2&w=960&h=1280   960w,
-                    https://images.theconversation.com/files/626813/original/file-20241021-17-mm1imw.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.48&fp-y=0.54&q=10&dpr=2&w=1400&h=1867 1400w,
-                    https://images.theconversation.com/files/626813/original/file-20241021-17-mm1imw.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.48&fp-y=0.54&q=10&dpr=2&w=2100&h=2800 2100w
+                    https://images.theconversation.com/files/627218/original/file-20241022-17-x70uiu.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.27&fp-y=0.50&q=10&dpr=2&w=700&h=933    700w,
+                    https://images.theconversation.com/files/627218/original/file-20241022-17-x70uiu.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.27&fp-y=0.50&q=10&dpr=2&w=960&h=1280   960w,
+                    https://images.theconversation.com/files/627218/original/file-20241022-17-x70uiu.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.27&fp-y=0.50&q=10&dpr=2&w=1400&h=1867 1400w,
+                    https://images.theconversation.com/files/627218/original/file-20241022-17-x70uiu.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.27&fp-y=0.50&q=10&dpr=2&w=2100&h=2800 2100w
                   "
                   type="image/jpeg" />
                 <source
                   media="(orientation: landscape) and (max-width: 979px)"
                   srcset="
-                    https://images.theconversation.com/files/626813/original/file-20241021-17-mm1imw.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.48&fp-y=0.56&q=30&dpr=1&w=700&h=525    700w,
-                    https://images.theconversation.com/files/626813/original/file-20241021-17-mm1imw.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.48&fp-y=0.56&q=30&dpr=1&w=960&h=720    960w,
-                    https://images.theconversation.com/files/626813/original/file-20241021-17-mm1imw.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.48&fp-y=0.56&q=30&dpr=1&w=1400&h=1050 1400w,
-                    https://images.theconversation.com/files/626813/original/file-20241021-17-mm1imw.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.48&fp-y=0.56&q=30&dpr=1&w=2100&h=1575 2100w
+                    https://images.theconversation.com/files/627218/original/file-20241022-17-x70uiu.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=30&dpr=1&w=700&h=525    700w,
+                    https://images.theconversation.com/files/627218/original/file-20241022-17-x70uiu.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=30&dpr=1&w=960&h=720    960w,
+                    https://images.theconversation.com/files/627218/original/file-20241022-17-x70uiu.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=30&dpr=1&w=1400&h=1050 1400w,
+                    https://images.theconversation.com/files/627218/original/file-20241022-17-x70uiu.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=30&dpr=1&w=2100&h=1575 2100w
                   "
                   type="image/jpeg" />
                 <source
                   media="(min-width: 700px) and (max-width: 979px)"
                   srcset="
-                    https://images.theconversation.com/files/626813/original/file-20241021-17-mm1imw.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.53&q=30&dpr=1&w=700&h=700    700w,
-                    https://images.theconversation.com/files/626813/original/file-20241021-17-mm1imw.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.53&q=30&dpr=1&w=960&h=960    960w,
-                    https://images.theconversation.com/files/626813/original/file-20241021-17-mm1imw.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.53&q=30&dpr=1&w=1400&h=1400 1400w,
-                    https://images.theconversation.com/files/626813/original/file-20241021-17-mm1imw.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.53&q=30&dpr=1&w=2100&h=2100 2100w
+                    https://images.theconversation.com/files/627218/original/file-20241022-17-x70uiu.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.36&fp-y=0.50&q=30&dpr=1&w=700&h=700    700w,
+                    https://images.theconversation.com/files/627218/original/file-20241022-17-x70uiu.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.36&fp-y=0.50&q=30&dpr=1&w=960&h=960    960w,
+                    https://images.theconversation.com/files/627218/original/file-20241022-17-x70uiu.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.36&fp-y=0.50&q=30&dpr=1&w=1400&h=1400 1400w,
+                    https://images.theconversation.com/files/627218/original/file-20241022-17-x70uiu.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.36&fp-y=0.50&q=30&dpr=1&w=2100&h=2100 2100w
                   "
                   type="image/jpeg" />
                 <source
                   media="(min-width: 980px) and (max-width: 1799px)"
                   srcset="
-                    https://images.theconversation.com/files/626813/original/file-20241021-17-mm1imw.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.49&fp-y=0.57&q=45&dpr=1&w=700&h=394    700w,
-                    https://images.theconversation.com/files/626813/original/file-20241021-17-mm1imw.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.49&fp-y=0.57&q=45&dpr=1&w=960&h=540    960w,
-                    https://images.theconversation.com/files/626813/original/file-20241021-17-mm1imw.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.49&fp-y=0.57&q=45&dpr=1&w=1400&h=788  1400w,
-                    https://images.theconversation.com/files/626813/original/file-20241021-17-mm1imw.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.49&fp-y=0.57&q=45&dpr=1&w=2100&h=1181 2100w
+                    https://images.theconversation.com/files/627218/original/file-20241022-17-x70uiu.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.52&q=45&dpr=1&w=700&h=394    700w,
+                    https://images.theconversation.com/files/627218/original/file-20241022-17-x70uiu.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.52&q=45&dpr=1&w=960&h=540    960w,
+                    https://images.theconversation.com/files/627218/original/file-20241022-17-x70uiu.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.52&q=45&dpr=1&w=1400&h=788  1400w,
+                    https://images.theconversation.com/files/627218/original/file-20241022-17-x70uiu.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.52&q=45&dpr=1&w=2100&h=1181 2100w
                   "
                   type="image/jpeg" />
                 <source
                   media="(min-width: 1800px)"
                   srcset="
-                    https://images.theconversation.com/files/626813/original/file-20241021-17-mm1imw.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.56&q=60&dpr=1&w=700&h=394    700w,
-                    https://images.theconversation.com/files/626813/original/file-20241021-17-mm1imw.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.56&q=60&dpr=1&w=960&h=540    960w,
-                    https://images.theconversation.com/files/626813/original/file-20241021-17-mm1imw.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.56&q=60&dpr=1&w=1400&h=788  1400w,
-                    https://images.theconversation.com/files/626813/original/file-20241021-17-mm1imw.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.56&q=60&dpr=1&w=2100&h=1181 2100w
+                    https://images.theconversation.com/files/627218/original/file-20241022-17-x70uiu.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.49&q=60&dpr=1&w=700&h=394    700w,
+                    https://images.theconversation.com/files/627218/original/file-20241022-17-x70uiu.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.49&q=60&dpr=1&w=960&h=540    960w,
+                    https://images.theconversation.com/files/627218/original/file-20241022-17-x70uiu.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.49&q=60&dpr=1&w=1400&h=788  1400w,
+                    https://images.theconversation.com/files/627218/original/file-20241022-17-x70uiu.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.49&q=60&dpr=1&w=2100&h=1181 2100w
                   "
                   type="image/jpeg" />
                 <img
                   loading="lazy"
-                  class="full_screen_media"
-                  src="https://images.theconversation.com/files/626813/original/file-20241021-17-mm1imw.jpg?ixlib=rb-4.1.0&auto=format&fit=crop&usm=12&q=45&dpr=1&w=2100&h=1181"
-                  alt="" />
+                  class="opacity-100"
+                  src="https://images.theconversation.com/files/627218/original/file-20241022-17-x70uiu.jpg?ixlib=rb-4.1.0&auto=format&fit=crop&usm=12&q=45&dpr=1&w=2100&h=1181"
+                  alt="Bushwalking women crossing a creek in long skirts" />
               </picture>
-              <figcaption></figcaption>
+              <figcaption>
+                <span
+                  ><a
+                    class="underline"
+                    href="https://find.slv.vic.gov.au/permalink/61SLV_INST/1sev8ar/alma9917879363607636"
+                    target="_blank"
+                    >State Library of Victoria</a
+                  ></span
+                >
+              </figcaption>
             </figure>
 
-            <figure class="full_screen_media opacity-100">
+            <figure class="full_screen_media">
               <picture>
                 <source
                   media="(max-width: 699px)"
                   srcset="
-                    https://images.theconversation.com/files/626860/original/file-20241021-15-ic14bp.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=10&dpr=2&w=700&h=933    700w,
-                    https://images.theconversation.com/files/626860/original/file-20241021-15-ic14bp.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=10&dpr=2&w=960&h=1280   960w,
-                    https://images.theconversation.com/files/626860/original/file-20241021-15-ic14bp.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=10&dpr=2&w=1400&h=1867 1400w,
-                    https://images.theconversation.com/files/626860/original/file-20241021-15-ic14bp.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=10&dpr=2&w=2100&h=2800 2100w
+                    https://images.theconversation.com/files/627226/original/file-20241022-16-jazot7.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.44&fp-y=0.50&q=10&dpr=2&w=700&h=933    700w,
+                    https://images.theconversation.com/files/627226/original/file-20241022-16-jazot7.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.44&fp-y=0.50&q=10&dpr=2&w=960&h=1280   960w,
+                    https://images.theconversation.com/files/627226/original/file-20241022-16-jazot7.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.44&fp-y=0.50&q=10&dpr=2&w=1400&h=1867 1400w,
+                    https://images.theconversation.com/files/627226/original/file-20241022-16-jazot7.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.44&fp-y=0.50&q=10&dpr=2&w=2100&h=2800 2100w
                   "
                   type="image/jpeg" />
                 <source
                   media="(orientation: landscape) and (max-width: 979px)"
                   srcset="
-                    https://images.theconversation.com/files/626860/original/file-20241021-15-ic14bp.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.51&fp-y=0.50&q=30&dpr=1&w=700&h=525    700w,
-                    https://images.theconversation.com/files/626860/original/file-20241021-15-ic14bp.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.51&fp-y=0.50&q=30&dpr=1&w=960&h=720    960w,
-                    https://images.theconversation.com/files/626860/original/file-20241021-15-ic14bp.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.51&fp-y=0.50&q=30&dpr=1&w=1400&h=1050 1400w,
-                    https://images.theconversation.com/files/626860/original/file-20241021-15-ic14bp.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.51&fp-y=0.50&q=30&dpr=1&w=2100&h=1575 2100w
+                    https://images.theconversation.com/files/627226/original/file-20241022-16-jazot7.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=30&dpr=1&w=700&h=525    700w,
+                    https://images.theconversation.com/files/627226/original/file-20241022-16-jazot7.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=30&dpr=1&w=960&h=720    960w,
+                    https://images.theconversation.com/files/627226/original/file-20241022-16-jazot7.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=30&dpr=1&w=1400&h=1050 1400w,
+                    https://images.theconversation.com/files/627226/original/file-20241022-16-jazot7.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=30&dpr=1&w=2100&h=1575 2100w
                   "
                   type="image/jpeg" />
                 <source
                   media="(min-width: 700px) and (max-width: 979px)"
                   srcset="
-                    https://images.theconversation.com/files/626860/original/file-20241021-15-ic14bp.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.51&fp-y=0.50&q=30&dpr=1&w=700&h=700    700w,
-                    https://images.theconversation.com/files/626860/original/file-20241021-15-ic14bp.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.51&fp-y=0.50&q=30&dpr=1&w=960&h=960    960w,
-                    https://images.theconversation.com/files/626860/original/file-20241021-15-ic14bp.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.51&fp-y=0.50&q=30&dpr=1&w=1400&h=1400 1400w,
-                    https://images.theconversation.com/files/626860/original/file-20241021-15-ic14bp.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.51&fp-y=0.50&q=30&dpr=1&w=2100&h=2100 2100w
+                    https://images.theconversation.com/files/627226/original/file-20241022-16-jazot7.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=30&dpr=1&w=700&h=700    700w,
+                    https://images.theconversation.com/files/627226/original/file-20241022-16-jazot7.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=30&dpr=1&w=960&h=960    960w,
+                    https://images.theconversation.com/files/627226/original/file-20241022-16-jazot7.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=30&dpr=1&w=1400&h=1400 1400w,
+                    https://images.theconversation.com/files/627226/original/file-20241022-16-jazot7.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=30&dpr=1&w=2100&h=2100 2100w
                   "
                   type="image/jpeg" />
                 <source
                   media="(min-width: 980px) and (max-width: 1799px)"
                   srcset="
-                    https://images.theconversation.com/files/626860/original/file-20241021-15-ic14bp.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=45&dpr=1&w=700&h=394    700w,
-                    https://images.theconversation.com/files/626860/original/file-20241021-15-ic14bp.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=45&dpr=1&w=960&h=540    960w,
-                    https://images.theconversation.com/files/626860/original/file-20241021-15-ic14bp.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=45&dpr=1&w=1400&h=788  1400w,
-                    https://images.theconversation.com/files/626860/original/file-20241021-15-ic14bp.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=45&dpr=1&w=2100&h=1181 2100w
+                    https://images.theconversation.com/files/627226/original/file-20241022-16-jazot7.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.61&q=45&dpr=1&w=700&h=394    700w,
+                    https://images.theconversation.com/files/627226/original/file-20241022-16-jazot7.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.61&q=45&dpr=1&w=960&h=540    960w,
+                    https://images.theconversation.com/files/627226/original/file-20241022-16-jazot7.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.61&q=45&dpr=1&w=1400&h=788  1400w,
+                    https://images.theconversation.com/files/627226/original/file-20241022-16-jazot7.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.61&q=45&dpr=1&w=2100&h=1181 2100w
                   "
                   type="image/jpeg" />
                 <source
                   media="(min-width: 1800px)"
                   srcset="
-                    https://images.theconversation.com/files/626860/original/file-20241021-15-ic14bp.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=60&dpr=1&w=700&h=394    700w,
-                    https://images.theconversation.com/files/626860/original/file-20241021-15-ic14bp.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=60&dpr=1&w=960&h=540    960w,
-                    https://images.theconversation.com/files/626860/original/file-20241021-15-ic14bp.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=60&dpr=1&w=1400&h=788  1400w,
-                    https://images.theconversation.com/files/626860/original/file-20241021-15-ic14bp.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=60&dpr=1&w=2100&h=1181 2100w
+                    https://images.theconversation.com/files/627226/original/file-20241022-16-jazot7.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.61&q=60&dpr=1&w=700&h=394    700w,
+                    https://images.theconversation.com/files/627226/original/file-20241022-16-jazot7.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.61&q=60&dpr=1&w=960&h=540    960w,
+                    https://images.theconversation.com/files/627226/original/file-20241022-16-jazot7.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.61&q=60&dpr=1&w=1400&h=788  1400w,
+                    https://images.theconversation.com/files/627226/original/file-20241022-16-jazot7.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.61&q=60&dpr=1&w=2100&h=1181 2100w
                   "
                   type="image/jpeg" />
                 <img
                   loading="lazy"
-                  class="full_screen_media"
-                  src="https://images.theconversation.com/files/626860/original/file-20241021-15-ic14bp.jpg?ixlib=rb-4.1.0&auto=format&fit=crop&usm=12&q=45&dpr=1&w=2100&h=1181"
+                  class=""
+                  src="https://images.theconversation.com/files/627226/original/file-20241022-16-jazot7.jpg?ixlib=rb-4.1.0&auto=format&fit=crop&usm=12&q=45&dpr=1&w=2100&h=1181"
                   alt="" />
               </picture>
-              <figcaption></figcaption>
+              <figcaption>
+                &#183; <span>State Library Victoria</span>
+              </figcaption>
+            </figure>
+
+            <figure class="full_screen_media">
+              <picture>
+                <source
+                  media="(max-width: 699px)"
+                  srcset="
+                    https://images.theconversation.com/files/627235/original/file-20241022-15-12l84l.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.32&fp-y=0.50&q=10&dpr=2&w=700&h=933    700w,
+                    https://images.theconversation.com/files/627235/original/file-20241022-15-12l84l.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.32&fp-y=0.50&q=10&dpr=2&w=960&h=1280   960w,
+                    https://images.theconversation.com/files/627235/original/file-20241022-15-12l84l.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.32&fp-y=0.50&q=10&dpr=2&w=1400&h=1867 1400w,
+                    https://images.theconversation.com/files/627235/original/file-20241022-15-12l84l.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.32&fp-y=0.50&q=10&dpr=2&w=2100&h=2800 2100w
+                  "
+                  type="image/jpeg" />
+                <source
+                  media="(orientation: landscape) and (max-width: 979px)"
+                  srcset="
+                    https://images.theconversation.com/files/627235/original/file-20241022-15-12l84l.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=30&dpr=1&w=700&h=525    700w,
+                    https://images.theconversation.com/files/627235/original/file-20241022-15-12l84l.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=30&dpr=1&w=960&h=720    960w,
+                    https://images.theconversation.com/files/627235/original/file-20241022-15-12l84l.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=30&dpr=1&w=1400&h=1050 1400w,
+                    https://images.theconversation.com/files/627235/original/file-20241022-15-12l84l.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=30&dpr=1&w=2100&h=1575 2100w
+                  "
+                  type="image/jpeg" />
+                <source
+                  media="(min-width: 700px) and (max-width: 979px)"
+                  srcset="
+                    https://images.theconversation.com/files/627235/original/file-20241022-15-12l84l.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.38&fp-y=0.50&q=30&dpr=1&w=700&h=700    700w,
+                    https://images.theconversation.com/files/627235/original/file-20241022-15-12l84l.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.38&fp-y=0.50&q=30&dpr=1&w=960&h=960    960w,
+                    https://images.theconversation.com/files/627235/original/file-20241022-15-12l84l.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.38&fp-y=0.50&q=30&dpr=1&w=1400&h=1400 1400w,
+                    https://images.theconversation.com/files/627235/original/file-20241022-15-12l84l.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.38&fp-y=0.50&q=30&dpr=1&w=2100&h=2100 2100w
+                  "
+                  type="image/jpeg" />
+                <source
+                  media="(min-width: 980px) and (max-width: 1799px)"
+                  srcset="
+                    https://images.theconversation.com/files/627235/original/file-20241022-15-12l84l.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.54&q=45&dpr=1&w=700&h=394    700w,
+                    https://images.theconversation.com/files/627235/original/file-20241022-15-12l84l.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.54&q=45&dpr=1&w=960&h=540    960w,
+                    https://images.theconversation.com/files/627235/original/file-20241022-15-12l84l.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.54&q=45&dpr=1&w=1400&h=788  1400w,
+                    https://images.theconversation.com/files/627235/original/file-20241022-15-12l84l.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.54&q=45&dpr=1&w=2100&h=1181 2100w
+                  "
+                  type="image/jpeg" />
+                <source
+                  media="(min-width: 1800px)"
+                  srcset="
+                    https://images.theconversation.com/files/627235/original/file-20241022-15-12l84l.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.48&q=60&dpr=1&w=700&h=394    700w,
+                    https://images.theconversation.com/files/627235/original/file-20241022-15-12l84l.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.48&q=60&dpr=1&w=960&h=540    960w,
+                    https://images.theconversation.com/files/627235/original/file-20241022-15-12l84l.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.48&q=60&dpr=1&w=1400&h=788  1400w,
+                    https://images.theconversation.com/files/627235/original/file-20241022-15-12l84l.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.48&q=60&dpr=1&w=2100&h=1181 2100w
+                  "
+                  type="image/jpeg" />
+                <img
+                  loading="lazy"
+                  class=""
+                  src="https://images.theconversation.com/files/627235/original/file-20241022-15-12l84l.jpg?ixlib=rb-4.1.0&auto=format&fit=crop&usm=12&q=45&dpr=1&w=2100&h=1181"
+                  alt="" />
+              </picture>
+              <figcaption>
+                &#183; <span>State Library Victoria</span>
+              </figcaption>
+            </figure>
+
+            <figure class="full_screen_media">
+              <picture>
+                <source
+                  media="(max-width: 699px)"
+                  srcset="
+                    https://images.theconversation.com/files/627222/original/file-20241022-20-4x1vlk.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=10&dpr=2&w=700&h=933    700w,
+                    https://images.theconversation.com/files/627222/original/file-20241022-20-4x1vlk.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=10&dpr=2&w=960&h=1280   960w,
+                    https://images.theconversation.com/files/627222/original/file-20241022-20-4x1vlk.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=10&dpr=2&w=1400&h=1867 1400w,
+                    https://images.theconversation.com/files/627222/original/file-20241022-20-4x1vlk.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=10&dpr=2&w=2100&h=2800 2100w
+                  "
+                  type="image/jpeg" />
+                <source
+                  media="(orientation: landscape) and (max-width: 979px)"
+                  srcset="
+                    https://images.theconversation.com/files/627222/original/file-20241022-20-4x1vlk.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=30&dpr=1&w=700&h=525    700w,
+                    https://images.theconversation.com/files/627222/original/file-20241022-20-4x1vlk.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=30&dpr=1&w=960&h=720    960w,
+                    https://images.theconversation.com/files/627222/original/file-20241022-20-4x1vlk.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=30&dpr=1&w=1400&h=1050 1400w,
+                    https://images.theconversation.com/files/627222/original/file-20241022-20-4x1vlk.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=30&dpr=1&w=2100&h=1575 2100w
+                  "
+                  type="image/jpeg" />
+                <source
+                  media="(min-width: 700px) and (max-width: 979px)"
+                  srcset="
+                    https://images.theconversation.com/files/627222/original/file-20241022-20-4x1vlk.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=30&dpr=1&w=700&h=700    700w,
+                    https://images.theconversation.com/files/627222/original/file-20241022-20-4x1vlk.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=30&dpr=1&w=960&h=960    960w,
+                    https://images.theconversation.com/files/627222/original/file-20241022-20-4x1vlk.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=30&dpr=1&w=1400&h=1400 1400w,
+                    https://images.theconversation.com/files/627222/original/file-20241022-20-4x1vlk.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=30&dpr=1&w=2100&h=2100 2100w
+                  "
+                  type="image/jpeg" />
+                <source
+                  media="(min-width: 980px) and (max-width: 1799px)"
+                  srcset="
+                    https://images.theconversation.com/files/627222/original/file-20241022-20-4x1vlk.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=45&dpr=1&w=700&h=394    700w,
+                    https://images.theconversation.com/files/627222/original/file-20241022-20-4x1vlk.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=45&dpr=1&w=960&h=540    960w,
+                    https://images.theconversation.com/files/627222/original/file-20241022-20-4x1vlk.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=45&dpr=1&w=1400&h=788  1400w,
+                    https://images.theconversation.com/files/627222/original/file-20241022-20-4x1vlk.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=45&dpr=1&w=2100&h=1181 2100w
+                  "
+                  type="image/jpeg" />
+                <source
+                  media="(min-width: 1800px)"
+                  srcset="
+                    https://images.theconversation.com/files/627222/original/file-20241022-20-4x1vlk.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=60&dpr=1&w=700&h=394    700w,
+                    https://images.theconversation.com/files/627222/original/file-20241022-20-4x1vlk.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=60&dpr=1&w=960&h=540    960w,
+                    https://images.theconversation.com/files/627222/original/file-20241022-20-4x1vlk.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=60&dpr=1&w=1400&h=788  1400w,
+                    https://images.theconversation.com/files/627222/original/file-20241022-20-4x1vlk.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=60&dpr=1&w=2100&h=1181 2100w
+                  "
+                  type="image/jpeg" />
+                <img
+                  loading="lazy"
+                  class=""
+                  src="https://images.theconversation.com/files/627222/original/file-20241022-20-4x1vlk.jpg?ixlib=rb-4.1.0&auto=format&fit=crop&usm=12&q=45&dpr=1&w=2100&h=1181"
+                  alt="Women bushwalkers on a lookout spot" />
+              </picture>
+              <figcaption>
+                &#183; <span>Melbourne Womens Walking Club</span>
+              </figcaption>
             </figure>
           </div>
         </div>
         <div class="pinned_foreground standard_width">
-          <div class="chapter_wrapper chapter_center">
+          <div
+            class="chapter_wrapper lg:chapter_center md:chapter_right mt-[20vh]">
             <p>
+              In the 1920s and 30s, some people scoffed at the idea women could
+              handle rugged encounters with nature. The bush was considered a
+              place for men.
+            </p>
+          </div>
+          <div
+            class="chapter_wrapper lg:chapter_center md:chapter_right mt-[20vh]">
+            <p class="step">
+              Besides, how could women walk rocky paths and steep hills in their
+              long skirts and impractical shoes?
+            </p>
+          </div>
+          <div class="chapter_wrapper chapter_center">
+            <p class="step">
               But some courageous women walked anyway. The Melbourne Women’s
               Walking Club was formed in 1922, and was the first of its kind in
               Australia.
@@ -484,22 +599,13 @@
             </p>
           </div>
           <div class="chapter_wrapper chapter_center">
-            <p>
-              But the women found solace in friendship and a shared love of
-              nature.
-            </p>
-          </div>
-          <div class="chapter_wrapper chapter_center">
             <p class="step">
-              They delighted in leaving behind the confines of city and home.
-              And for some, bushwalking led to a lifelong passion for
-              conservation.
-            </p>
-          </div>
-          <div class="chapter_wrapper chapter_center">
-            <p>
-              My new research sheds light on the stories of these remarkable
-              women.
+              But the women found solace in friendship and a shared love of
+              nature. My
+              <a href="https://doi.org/10.1080/1031461X.2024.2406839"
+                >new research</a
+              >
+              sheds light on the stories of these remarkable women.
             </p>
           </div>
         </div>
@@ -514,16 +620,9 @@
       </p>
 
       <p>
-        It became more popular as a pastime around 1900, reaching a peak in the
-        1930s. A number of bushwalking clubs spawned, such as the male-only
-        Melbourne Amateur Touring and Walking Club which began in 1894. Women
-        walkers were only permitted to join on the occasional Ladies’ Day.
-      </p>
-
-      <p>
-        In 1922, a group of Melbourne women decided they weren’t satisfied with
-        being shut out of walking tracks. And so the Melbourne Women’s Walking
-        Club was born.
+        It became more popular as a pastime from 1900 onwards, when a number of
+        male-only bushwalking clubs spawned. Women were offered only occasional
+        opportunities to join them on “Ladies’ Day”.
       </p>
 
       <figure class="imgfloat-right">
@@ -542,25 +641,25 @@
           "
           src="https://images.theconversation.com/files/626836/original/file-20241021-17-26mo6k.JPG?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=800&amp;fit=crop&amp;dpr=2" />
 
-        <figcaption>A bushwalking program from 1926</figcaption>
+        <figcaption>
+          The club program for 1926 &#183;
+          <span>Melbourne Womens Walking Club</span>
+        </figcaption>
       </figure>
 
       <p>
-        The annual program offered between 30 and 40 walks catering to a range
-        of abilities, as well as a busy social calendar.
+        In 1922, a group of women decided they wanted their own bushwalking club
+        – and the Melbourne Women’s Walking Club was born. Members defied
+        societal expectations by walking in bushland across Victoria and beyond
+        – sometimes for weeks at a time.
       </p>
 
       <p>
-        Members defied expectations by walking in bushland across Victoria and
-        beyond – sometimes for weeks at a time.
+        The annual program offered between 30 and 40 walks catering to a range
+        of abilities, as well as a busy calendar of other social events.
       </p>
 
       <h2>Taking a hike with the Melbourne Women’s Walking Club</h2>
-
-      <p>
-        In the early days, most club members met at Flinders Street Station then
-        took a train to the beginning of their hike.
-      </p>
 
       <figure>
         <img
@@ -568,17 +667,17 @@
           alt="Flinders Streets Station And The Yarra, Melbourne 1920-1954"
           sizes="(max-width: 599px) 100vw, (min-width: 600px) and (max-width: 1535px) 750px, (min-width: 1536px) 800px"
           srcset="
-            https://images.theconversation.com/files/626873/original/file-20241021-15-31uwgk.jpg?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=1  600w,
-            https://images.theconversation.com/files/626873/original/file-20241021-15-31uwgk.jpg?ixlib=rb-4.1.0&amp;q=30&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=2 1200w,
-            https://images.theconversation.com/files/626873/original/file-20241021-15-31uwgk.jpg?ixlib=rb-4.1.0&amp;q=15&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=3 1800w,
-            https://images.theconversation.com/files/626873/original/file-20241021-15-31uwgk.jpg?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=750&amp;fit=crop&amp;dpr=1  750w,
-            https://images.theconversation.com/files/626873/original/file-20241021-15-31uwgk.jpg?ixlib=rb-4.1.0&amp;q=30&amp;auto=format,compress&amp;cs=srgb&amp;w=800&amp;fit=crop&amp;dpr=2 1508w,
-            https://images.theconversation.com/files/626873/original/file-20241021-15-31uwgk.jpg?ixlib=rb-4.1.0&amp;q=15&amp;auto=format,compress&amp;cs=srgb&amp;w=800&amp;fit=crop&amp;dpr=3 2262w
+            https://images.theconversation.com/files/627217/original/file-20241022-17-7oyu7p.jpg?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=1  600w,
+            https://images.theconversation.com/files/627217/original/file-20241022-17-7oyu7p.jpg?ixlib=rb-4.1.0&amp;q=30&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=2 1200w,
+            https://images.theconversation.com/files/627217/original/file-20241022-17-7oyu7p.jpg?ixlib=rb-4.1.0&amp;q=15&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=3 1800w,
+            https://images.theconversation.com/files/627217/original/file-20241022-17-7oyu7p.jpg?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=750&amp;fit=crop&amp;dpr=1  750w,
+            https://images.theconversation.com/files/627217/original/file-20241022-17-7oyu7p.jpg?ixlib=rb-4.1.0&amp;q=30&amp;auto=format,compress&amp;cs=srgb&amp;w=800&amp;fit=crop&amp;dpr=2 1508w,
+            https://images.theconversation.com/files/627217/original/file-20241022-17-7oyu7p.jpg?ixlib=rb-4.1.0&amp;q=15&amp;auto=format,compress&amp;cs=srgb&amp;w=800&amp;fit=crop&amp;dpr=3 2262w
           "
-          src="https://images.theconversation.com/files/626873/original/file-20241021-15-31uwgk.jpg?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=800&amp;fit=crop&amp;dpr=2" />
+          src="https://images.theconversation.com/files/627217/original/file-20241022-17-7oyu7p.jpg?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=800&amp;fit=crop&amp;dpr=2" />
 
         <figcaption>
-          Flinders Streets Station And The Yarra, Melbourne 1920-1954 &#183;
+          Flinders Streets Station &#183;
           <span
             ><a href="http://handle.slv.vic.gov.au/10381/63531" target="_blank"
               >Rose Stereograph Co, State Library Victoria</a
@@ -588,95 +687,58 @@
       </figure>
 
       <p>
-        Walking destinations included Wilson’s Promontory, the You Yangs,
-        Phillip Island, the Grampians, Anglesea, and Mount Buller.
-      </p>
-
-      <figure>
-        <img
-          loading="lazy"
-          alt=""
-          sizes="(max-width: 599px) 100vw, (min-width: 600px) and (max-width: 1535px) 750px, (min-width: 1536px) 800px"
-          srcset="
-            https://images.theconversation.com/files/626828/original/file-20241021-15-7ynetq.jpg?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=1  600w,
-            https://images.theconversation.com/files/626828/original/file-20241021-15-7ynetq.jpg?ixlib=rb-4.1.0&amp;q=30&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=2 1200w,
-            https://images.theconversation.com/files/626828/original/file-20241021-15-7ynetq.jpg?ixlib=rb-4.1.0&amp;q=15&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=3 1800w,
-            https://images.theconversation.com/files/626828/original/file-20241021-15-7ynetq.jpg?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=750&amp;fit=crop&amp;dpr=1  750w,
-            https://images.theconversation.com/files/626828/original/file-20241021-15-7ynetq.jpg?ixlib=rb-4.1.0&amp;q=30&amp;auto=format,compress&amp;cs=srgb&amp;w=800&amp;fit=crop&amp;dpr=2 1508w,
-            https://images.theconversation.com/files/626828/original/file-20241021-15-7ynetq.jpg?ixlib=rb-4.1.0&amp;q=15&amp;auto=format,compress&amp;cs=srgb&amp;w=800&amp;fit=crop&amp;dpr=3 2262w
-          "
-          src="https://images.theconversation.com/files/626828/original/file-20241021-15-7ynetq.jpg?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=800&amp;fit=crop&amp;dpr=2" />
-
-        <figcaption></figcaption>
-      </figure>
-
-      <figure class="imgfloat-right">
-        <img
-          loading="lazy"
-          alt=""
-          sizes="(max-width: 599px) 100vw, (min-width: 600px) and (max-width: 1535px) 750px, (min-width: 1536px) 800px"
-          srcset="
-            https://images.theconversation.com/files/626821/original/file-20241021-17-5jomzz.jpg?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=1  600w,
-            https://images.theconversation.com/files/626821/original/file-20241021-17-5jomzz.jpg?ixlib=rb-4.1.0&amp;q=30&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=2 1200w,
-            https://images.theconversation.com/files/626821/original/file-20241021-17-5jomzz.jpg?ixlib=rb-4.1.0&amp;q=15&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=3 1800w,
-            https://images.theconversation.com/files/626821/original/file-20241021-17-5jomzz.jpg?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=750&amp;fit=crop&amp;dpr=1  750w,
-            https://images.theconversation.com/files/626821/original/file-20241021-17-5jomzz.jpg?ixlib=rb-4.1.0&amp;q=30&amp;auto=format,compress&amp;cs=srgb&amp;w=800&amp;fit=crop&amp;dpr=2 1508w,
-            https://images.theconversation.com/files/626821/original/file-20241021-17-5jomzz.jpg?ixlib=rb-4.1.0&amp;q=15&amp;auto=format,compress&amp;cs=srgb&amp;w=800&amp;fit=crop&amp;dpr=3 2262w
-          "
-          src="https://images.theconversation.com/files/626821/original/file-20241021-17-5jomzz.jpg?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=800&amp;fit=crop&amp;dpr=2" />
-
-        <figcaption></figcaption>
-      </figure>
-
-      <p>
-        Some MWWC walking locations are still popular with bushwalkers today.
-        But others are better known now as become suburbs of Melbourne, like
-        Heidelberg, Doncaster and Box Hill.
+        In the early days, most club members met at Flinders Street Station then
+        took a train to the start of their hike. Walking destinations included
+        Wilson’s Promontory, the You Yangs, Phillip Island, the Grampians,
+        Anglesea and Mount Buller.
       </p>
 
       <p>
         The women waited until they were in the bush, hidden from public view,
-        before stripping off their bulky skirts and donning jodhpurs instead.
+        before stripping off their bulky skirts and donning jodhpurs instead. By
+        the 1930s, some women even wore shorts.
       </p>
 
-      <figure class="">
+      <figure class="mx-auto max-w-96">
         <img
           loading="lazy"
-          alt=""
+          alt="A woman in jodhpurs"
           sizes="(max-width: 599px) 100vw, (min-width: 600px) and (max-width: 1535px) 750px, (min-width: 1536px) 800px"
           srcset="
-            https://images.theconversation.com/files/626861/original/file-20241021-15-c5rz8r.jpg?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=1  600w,
-            https://images.theconversation.com/files/626861/original/file-20241021-15-c5rz8r.jpg?ixlib=rb-4.1.0&amp;q=30&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=2 1200w,
-            https://images.theconversation.com/files/626861/original/file-20241021-15-c5rz8r.jpg?ixlib=rb-4.1.0&amp;q=15&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=3 1800w,
-            https://images.theconversation.com/files/626861/original/file-20241021-15-c5rz8r.jpg?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=750&amp;fit=crop&amp;dpr=1  750w,
-            https://images.theconversation.com/files/626861/original/file-20241021-15-c5rz8r.jpg?ixlib=rb-4.1.0&amp;q=30&amp;auto=format,compress&amp;cs=srgb&amp;w=800&amp;fit=crop&amp;dpr=2 1508w,
-            https://images.theconversation.com/files/626861/original/file-20241021-15-c5rz8r.jpg?ixlib=rb-4.1.0&amp;q=15&amp;auto=format,compress&amp;cs=srgb&amp;w=800&amp;fit=crop&amp;dpr=3 2262w
+            https://images.theconversation.com/files/627240/original/file-20241022-19-oof1je.png?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=1  600w,
+            https://images.theconversation.com/files/627240/original/file-20241022-19-oof1je.png?ixlib=rb-4.1.0&amp;q=30&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=2 1200w,
+            https://images.theconversation.com/files/627240/original/file-20241022-19-oof1je.png?ixlib=rb-4.1.0&amp;q=15&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=3 1800w,
+            https://images.theconversation.com/files/627240/original/file-20241022-19-oof1je.png?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=750&amp;fit=crop&amp;dpr=1  750w,
+            https://images.theconversation.com/files/627240/original/file-20241022-19-oof1je.png?ixlib=rb-4.1.0&amp;q=30&amp;auto=format,compress&amp;cs=srgb&amp;w=800&amp;fit=crop&amp;dpr=2 1508w,
+            https://images.theconversation.com/files/627240/original/file-20241022-19-oof1je.png?ixlib=rb-4.1.0&amp;q=15&amp;auto=format,compress&amp;cs=srgb&amp;w=800&amp;fit=crop&amp;dpr=3 2262w
           "
-          src="https://images.theconversation.com/files/626861/original/file-20241021-15-c5rz8r.jpg?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=800&amp;fit=crop&amp;dpr=2" />
+          src="https://images.theconversation.com/files/627240/original/file-20241022-19-oof1je.png?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=800&amp;fit=crop&amp;dpr=2" />
 
-        <figcaption></figcaption>
+        <figcaption><span>State Library Victoria</span></figcaption>
       </figure>
 
-      <p class="clear-both">
+      <p>
         The women carried a communal billy and took mealtimes seriously. For a
-        weekend walking trip, the recommended packing list for each walker
+        weekend walking trip, the recommended packing list for each woman
         included:
       </p>
 
       <figure class="imgfloat-right">
         <img
           loading="lazy"
-          alt=""
+          alt="Bushwalkers making lunch"
           sizes="(max-width: 599px) 100vw, (min-width: 600px) and (max-width: 1535px) 750px, (min-width: 1536px) 800px"
           srcset="
-            https://images.theconversation.com/files/626863/original/file-20241021-15-odgbh5.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=10&dpr=2&w=700&h=933    700w,
-            https://images.theconversation.com/files/626863/original/file-20241021-15-odgbh5.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=10&dpr=2&w=960&h=1280   960w,
-            https://images.theconversation.com/files/626863/original/file-20241021-15-odgbh5.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=10&dpr=2&w=1400&h=1867 1400w,
-            https://images.theconversation.com/files/626863/original/file-20241021-15-odgbh5.jpg?ixlib=rb-4.1.0&auto=format%2Ccompress&fit=crop&crop=focalpoint&usm=12&fp-x=0.50&fp-y=0.50&q=10&dpr=2&w=2100&h=2800 2100w
+            https://images.theconversation.com/files/627221/original/file-20241022-17-q27u0p.jpg?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=1  600w,
+            https://images.theconversation.com/files/627221/original/file-20241022-17-q27u0p.jpg?ixlib=rb-4.1.0&amp;q=30&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=2 1200w,
+            https://images.theconversation.com/files/627221/original/file-20241022-17-q27u0p.jpg?ixlib=rb-4.1.0&amp;q=15&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=3 1800w,
+            https://images.theconversation.com/files/627221/original/file-20241022-17-q27u0p.jpg?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=750&amp;fit=crop&amp;dpr=1  750w,
+            https://images.theconversation.com/files/627221/original/file-20241022-17-q27u0p.jpg?ixlib=rb-4.1.0&amp;q=30&amp;auto=format,compress&amp;cs=srgb&amp;w=800&amp;fit=crop&amp;dpr=2 1508w,
+            https://images.theconversation.com/files/627221/original/file-20241022-17-q27u0p.jpg?ixlib=rb-4.1.0&amp;q=15&amp;auto=format,compress&amp;cs=srgb&amp;w=800&amp;fit=crop&amp;dpr=3 2262w
           "
-          src="https://images.theconversation.com/files/626863/original/file-20241021-15-odgbh5.jpg?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=800&amp;fit=crop&amp;dpr=2" />
+          src="https://images.theconversation.com/files/627221/original/file-20241022-17-q27u0p.jpg?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=800&amp;fit=crop&amp;dpr=2" />
 
-        <figcaption></figcaption>
+        <figcaption><span>State Library Victoria</span></figcaption>
       </figure>
 
       <ul>
@@ -691,6 +753,24 @@
         <li>two crumpets (for tea on Sunday)</li>
       </ul>
 
+      <figure>
+        <img
+          loading="lazy"
+          alt="Bushwalkers making lunch"
+          sizes="(max-width: 599px) 100vw, (min-width: 600px) and (max-width: 1535px) 750px, (min-width: 1536px) 800px"
+          srcset="
+            https://images.theconversation.com/files/627239/original/file-20241022-15-v6g2uh.png?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=1  600w,
+            https://images.theconversation.com/files/627239/original/file-20241022-15-v6g2uh.png?ixlib=rb-4.1.0&amp;q=30&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=2 1200w,
+            https://images.theconversation.com/files/627239/original/file-20241022-15-v6g2uh.png?ixlib=rb-4.1.0&amp;q=15&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=3 1800w,
+            https://images.theconversation.com/files/627239/original/file-20241022-15-v6g2uh.png?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=750&amp;fit=crop&amp;dpr=1  750w,
+            https://images.theconversation.com/files/627239/original/file-20241022-15-v6g2uh.png?ixlib=rb-4.1.0&amp;q=30&amp;auto=format,compress&amp;cs=srgb&amp;w=800&amp;fit=crop&amp;dpr=2 1508w,
+            https://images.theconversation.com/files/627239/original/file-20241022-15-v6g2uh.png?ixlib=rb-4.1.0&amp;q=15&amp;auto=format,compress&amp;cs=srgb&amp;w=800&amp;fit=crop&amp;dpr=3 2262w
+          "
+          src="https://images.theconversation.com/files/627239/original/file-20241022-15-v6g2uh.png?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=800&amp;fit=crop&amp;dpr=2" />
+
+        <figcaption><span>State Library Victoria</span></figcaption>
+      </figure>
+
       <p class="clear-both">
         The women carried homemade sleeping bags for overnight and multi-day
         walks. Sometimes, pack-horses joined the journey.
@@ -699,52 +779,72 @@
       <figure>
         <img
           loading="lazy"
-          alt=""
+          alt="Bushwalkers with a pack horse"
           sizes="(max-width: 599px) 100vw, (min-width: 600px) and (max-width: 1535px) 750px, (min-width: 1536px) 800px"
           srcset="
-            https://images.theconversation.com/files/626826/original/file-20241021-19-8fsjr8.jpg?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=1  600w,
-            https://images.theconversation.com/files/626826/original/file-20241021-19-8fsjr8.jpg?ixlib=rb-4.1.0&amp;q=30&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=2 1200w,
-            https://images.theconversation.com/files/626826/original/file-20241021-19-8fsjr8.jpg?ixlib=rb-4.1.0&amp;q=15&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=3 1800w,
-            https://images.theconversation.com/files/626826/original/file-20241021-19-8fsjr8.jpg?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=750&amp;fit=crop&amp;dpr=1  750w,
-            https://images.theconversation.com/files/626826/original/file-20241021-19-8fsjr8.jpg?ixlib=rb-4.1.0&amp;q=30&amp;auto=format,compress&amp;cs=srgb&amp;w=800&amp;fit=crop&amp;dpr=2 1508w,
-            https://images.theconversation.com/files/626826/original/file-20241021-19-8fsjr8.jpg?ixlib=rb-4.1.0&amp;q=15&amp;auto=format,compress&amp;cs=srgb&amp;w=800&amp;fit=crop&amp;dpr=3 2262w
+            https://images.theconversation.com/files/627243/original/file-20241022-19-mq1scx.png?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=1  600w,
+            https://images.theconversation.com/files/627243/original/file-20241022-19-mq1scx.png?ixlib=rb-4.1.0&amp;q=30&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=2 1200w,
+            https://images.theconversation.com/files/627243/original/file-20241022-19-mq1scx.png?ixlib=rb-4.1.0&amp;q=15&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=3 1800w,
+            https://images.theconversation.com/files/627243/original/file-20241022-19-mq1scx.png?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=750&amp;fit=crop&amp;dpr=1  750w,
+            https://images.theconversation.com/files/627243/original/file-20241022-19-mq1scx.png?ixlib=rb-4.1.0&amp;q=30&amp;auto=format,compress&amp;cs=srgb&amp;w=800&amp;fit=crop&amp;dpr=2 1508w,
+            https://images.theconversation.com/files/627243/original/file-20241022-19-mq1scx.png?ixlib=rb-4.1.0&amp;q=15&amp;auto=format,compress&amp;cs=srgb&amp;w=800&amp;fit=crop&amp;dpr=3 2262w
           "
-          src="https://images.theconversation.com/files/626826/original/file-20241021-19-8fsjr8.jpg?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=800&amp;fit=crop&amp;dpr=2" />
+          src="https://images.theconversation.com/files/627243/original/file-20241022-19-mq1scx.png?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=800&amp;fit=crop&amp;dpr=2" />
 
-        <figcaption></figcaption>
+        <figcaption><span>State Library Victoria</span></figcaption>
       </figure>
 
-      <p class="clear-both">
-        Less difficult were caravan trips, like the one in this image, where
-        women were driven into the bush in a specially converted open-side
-        furniture van.
+      <p>
+        On caravan trips, such as the one depicted in this image, the women were
+        driven into the bush in a specially converted open-side furniture van.
       </p>
 
       <figure>
         <img
           loading="lazy"
-          alt=""
+          alt="A converted furniture van helped transport the women"
           sizes="(max-width: 599px) 100vw, (min-width: 600px) and (max-width: 1535px) 750px, (min-width: 1536px) 800px"
           srcset="
-            https://images.theconversation.com/files/626823/original/file-20241021-19-fiptqp.jpg?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=1  600w,
-            https://images.theconversation.com/files/626823/original/file-20241021-19-fiptqp.jpg?ixlib=rb-4.1.0&amp;q=30&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=2 1200w,
-            https://images.theconversation.com/files/626823/original/file-20241021-19-fiptqp.jpg?ixlib=rb-4.1.0&amp;q=15&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=3 1800w,
-            https://images.theconversation.com/files/626823/original/file-20241021-19-fiptqp.jpg?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=750&amp;fit=crop&amp;dpr=1  750w,
-            https://images.theconversation.com/files/626823/original/file-20241021-19-fiptqp.jpg?ixlib=rb-4.1.0&amp;q=30&amp;auto=format,compress&amp;cs=srgb&amp;w=800&amp;fit=crop&amp;dpr=2 1508w,
-            https://images.theconversation.com/files/626823/original/file-20241021-19-fiptqp.jpg?ixlib=rb-4.1.0&amp;q=15&amp;auto=format,compress&amp;cs=srgb&amp;w=800&amp;fit=crop&amp;dpr=3 2262w
+            https://images.theconversation.com/files/627237/original/file-20241022-19-nco20c.png?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=1  600w,
+            https://images.theconversation.com/files/627237/original/file-20241022-19-nco20c.png?ixlib=rb-4.1.0&amp;q=30&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=2 1200w,
+            https://images.theconversation.com/files/627237/original/file-20241022-19-nco20c.png?ixlib=rb-4.1.0&amp;q=15&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=3 1800w,
+            https://images.theconversation.com/files/627237/original/file-20241022-19-nco20c.png?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=750&amp;fit=crop&amp;dpr=1  750w,
+            https://images.theconversation.com/files/627237/original/file-20241022-19-nco20c.png?ixlib=rb-4.1.0&amp;q=30&amp;auto=format,compress&amp;cs=srgb&amp;w=800&amp;fit=crop&amp;dpr=2 1508w,
+            https://images.theconversation.com/files/627237/original/file-20241022-19-nco20c.png?ixlib=rb-4.1.0&amp;q=15&amp;auto=format,compress&amp;cs=srgb&amp;w=800&amp;fit=crop&amp;dpr=3 2262w
           "
-          src="https://images.theconversation.com/files/626823/original/file-20241021-19-fiptqp.jpg?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=800&amp;fit=crop&amp;dpr=2" />
+          src="https://images.theconversation.com/files/627237/original/file-20241022-19-nco20c.png?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=800&amp;fit=crop&amp;dpr=2" />
 
-        <figcaption></figcaption>
+        <figcaption>
+          A converted furniture van helped transport the women &#183;
+          <span>State Library Victoria</span>
+        </figcaption>
       </figure>
 
-      <p>
-        Like today, bushwalking in the 1920s and 30s could be difficult and even
-        <a
-          href="https://theconversation.com/stick-to-the-path-and-stay-alive-in-national-parks-this-summer-108062"
-          >dangerous</a
-        >.
-      </p>
+      <h2>Challenging journeys</h2>
+
+      <figure class="imgfloat-right">
+        <img
+          loading="lazy"
+          alt="Two women sitting on edge of cliff"
+          sizes="(max-width: 599px) 100vw, (min-width: 600px) and (max-width: 1535px) 750px, (min-width: 1536px) 800px"
+          srcset="
+            https://images.theconversation.com/files/626809/original/file-20241021-17-jdccb2.jpg?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=1  600w,
+            https://images.theconversation.com/files/626809/original/file-20241021-17-jdccb2.jpg?ixlib=rb-4.1.0&amp;q=30&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=2 1200w,
+            https://images.theconversation.com/files/626809/original/file-20241021-17-jdccb2.jpg?ixlib=rb-4.1.0&amp;q=15&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=3 1800w,
+            https://images.theconversation.com/files/626809/original/file-20241021-17-jdccb2.jpg?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=750&amp;fit=crop&amp;dpr=1  750w,
+            https://images.theconversation.com/files/626809/original/file-20241021-17-jdccb2.jpg?ixlib=rb-4.1.0&amp;q=30&amp;auto=format,compress&amp;cs=srgb&amp;w=800&amp;fit=crop&amp;dpr=2 1508w,
+            https://images.theconversation.com/files/626809/original/file-20241021-17-jdccb2.jpg?ixlib=rb-4.1.0&amp;q=15&amp;auto=format,compress&amp;cs=srgb&amp;w=800&amp;fit=crop&amp;dpr=3 2262w
+          "
+          src="https://images.theconversation.com/files/626809/original/file-20241021-17-jdccb2.jpg?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=800&amp;fit=crop&amp;dpr=2" />
+
+        <figcaption>
+          Two women resting by a cliff show the daring of early bushwalkers
+          &#183;
+          <span>Alice Manfield Collection, State Library of Victoria</span>
+        </figcaption>
+      </figure>
+
+      <p>Like today, bushwalking in the 1920s and 30s could be difficult.</p>
 
       <p>
         One club member, Margery Luth, wrote in the club’s journal of a
@@ -754,30 +854,31 @@
         Luth, however, was delighted, saying
       </p>
 
+      <p>
+        One club member, Margery Luth, recounted in the club’s journal a
+        particularly challenging walk to Mount Buller in 1938. Their bus broke
+        down on the way to the walk. As they hiked, a hailstorm hit. And when
+        they stopped overnight to sleep in a shed, the roof leaked. Luth,
+        however, found the trip “thoroughly enjoyable” and wrote lyrically of
+        observing the bush after dark:
+      </p>
+
       <div
-        class="not-prose mx-auto w-[min(calc(100%-40px),600px)] rounded-r-lg border-l-4 px-5 py-4">
-        <p class="font-mono typewriter leading-loose">
-          So concluded the trip that reached the high-water mark of thrills, yet
-          succeeded, nevertheless, in being thoroughly enjoyable. It has left us
-          all a host of diverting memories - pleasant, humorous , and
-          hair-raising.
+        class="not-prose standard_width clear-both mx-auto my-14 rounded-r-lg border-l-4 px-5">
+        <p class="typewriter font-mono leading-loose">
+          It was a heavenly night… all the beauty of the bush was visible, the
+          feathery foliage of the wattles, the sparkle of the gum leaves, the
+          tracery of tree ferns and the tangle of undergrowth
         </p>
-        <p class="text-right font-base">- Margery Luth</p>
+        <p class="pt-4 font-base">- Margery Luth</p>
       </div>
 
-      <!-- <p>
-        
-        ‘It was a heavenly night… all the beauty of the bush was visible, the
-        feathery foliage of the wattles, the sparkle of the gum leaves, the
-        tracery of tree ferns and the tangle of undergrowth.’
-      </p> -->
-
       <p>
-        On another walk in December 1928, a group of members became lost for two
-        days in the Bogong High Plains in punishing December heat. Their food
-        supplies were diminishing and they ran out of water. The women
-        eventually found shelter for the night in a hut near Mount Fainter–
-        where one women photographed the group grinning wildly.
+        On another walk in December 1928, a group became lost for two days in
+        the Bogong High Plains in punishing December heat. Their food supplies
+        diminished and they ran out of water. The women eventually found shelter
+        for the night in a hut near Mount Fainter, where one woman photographed
+        the group grinning wildly.
       </p>
 
       <figure>
@@ -798,17 +899,53 @@
         <figcaption></figcaption>
       </figure>
 
+      <figure class="imgfloat-right !ml-6 !mt-0">
+        <img
+          loading="lazy"
+          alt="Olive Sandell"
+          sizes="(max-width: 599px) 100vw, (min-width: 600px) and (max-width: 1535px) 750px, (min-width: 1536px) 800px"
+          srcset="
+            https://images.theconversation.com/files/626909/original/file-20241021-15-45njjw.jpg?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=1  600w,
+            https://images.theconversation.com/files/626909/original/file-20241021-15-45njjw.jpg?ixlib=rb-4.1.0&amp;q=30&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=2 1200w,
+            https://images.theconversation.com/files/626909/original/file-20241021-15-45njjw.jpg?ixlib=rb-4.1.0&amp;q=15&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=3 1800w,
+            https://images.theconversation.com/files/626909/original/file-20241021-15-45njjw.jpg?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=750&amp;fit=crop&amp;dpr=1  750w,
+            https://images.theconversation.com/files/626909/original/file-20241021-15-45njjw.jpg?ixlib=rb-4.1.0&amp;q=30&amp;auto=format,compress&amp;cs=srgb&amp;w=800&amp;fit=crop&amp;dpr=2 1508w,
+            https://images.theconversation.com/files/626909/original/file-20241021-15-45njjw.jpg?ixlib=rb-4.1.0&amp;q=15&amp;auto=format,compress&amp;cs=srgb&amp;w=800&amp;fit=crop&amp;dpr=3 2262w
+          "
+          src="https://images.theconversation.com/files/626909/original/file-20241021-15-45njjw.jpg?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=800&amp;fit=crop&amp;dpr=2" />
+
+        <figcaption>
+          Olive Sandell died after falling from a cliff &#183;
+          <span>State Library of Victoria</span>
+        </figcaption>
+      </figure>
+
       <p>
-        On one fateful bushwalk in 1937, tragedy struck. Club member
-        <a href="http://nla.gov.au/nla.news-page6196370">Olive Sandell</a> died
-        after falling and hitting her head during a walk in the Cathedral
-        Ranges. Her devastated friend Molly Levvy wrote a poem in memory of
-        Sandell, describing her “pal who waits in the bush for me”.
+        And tragically, on a fateful bushwalk in 1937, one club member died
+        after an accident.
+        <a href="http://nla.gov.au/nla.news-page6196370">Olive Sandell</a> fell
+        and hit her head during a walk in the Cathedral Ranges. Her devastated
+        friend Molly Levvy later wrote a moving poem in memory of Sandell. It
+        concluded:
       </p>
 
       <div
-        class="not-prose mx-auto w-[min(calc(100%-40px),600px)] rounded-r-lg border-l-4 px-5 py-4">
-        <p class="font-mono typewriter text-justify leading-loose">
+        class="not-prose standard_width clear-both mx-auto my-14 rounded-r-lg border-l-4 px-5">
+        <p class="typewriter text-justify font-mono leading-loose">
+          And I keep in mind the wonderful thought
+        </p>
+        <p class="typewriter text-justify font-mono leading-loose">
+          Of a pal who waits in the Bush for me:
+        </p>
+        <p class="typewriter text-justify font-mono leading-loose">
+          A pal who understood.
+        </p>
+        <p class="pt-4 font-base">- Molly Levy</p>
+      </div>
+
+      <!-- <div
+        class="not-prose standard_width mx-auto my-14 rounded-r-lg border-l-4 px-5">
+        <p class="typewriter text-justify font-mono leading-loose">
           "You've lost a pal." I hear them say
           <br />
           And I wonder if they really know <br />What it means to lose a pal of
@@ -823,22 +960,15 @@
           thought <br />Of a pal who waits in the Bush for me: <br />A pal who
           understood.
         </p>
-        <p class="text-right font-base">- Molly Levy</p>
-      </div>
+        <p class="pt-4 font-base">- Molly Levy</p>
+      </div> -->
 
-      <h2>Why was a women’s walking club so controversial?</h2>
-
-      <p>
-        Members of the Melbourne Women’s Walking Club cherished their
-        bushwalking friendships. They rejoiced in escaping their domestic
-        responsibilities and the busyness and pollution of city life.
-      </p>
+      <h2>A controversial pastime</h2>
 
       <p>
-        In 1941, as World War Two rocked Australian society, one member
-        described a weekend in the Blue Mountains as ‘truly a re-creation of
-        mind and body and spirit, right away from the war, and the work and the
-        worry of the everyday world’.
+        Members of the Melbourne Women’s Walking Club cherished their time in
+        the bush. They formed firm friendships. They rejoiced in escaping their
+        domestic responsibilities and the busyness and pollution of city life.
       </p>
 
       <figure>
@@ -847,26 +977,27 @@
           alt=""
           sizes="(max-width: 599px) 100vw, (min-width: 600px) and (max-width: 1535px) 750px, (min-width: 1536px) 800px"
           srcset="
-            https://images.theconversation.com/files/626822/original/file-20241021-15-s9j2g0.jpg?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=1  600w,
-            https://images.theconversation.com/files/626822/original/file-20241021-15-s9j2g0.jpg?ixlib=rb-4.1.0&amp;q=30&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=2 1200w,
-            https://images.theconversation.com/files/626822/original/file-20241021-15-s9j2g0.jpg?ixlib=rb-4.1.0&amp;q=15&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=3 1800w,
-            https://images.theconversation.com/files/626822/original/file-20241021-15-s9j2g0.jpg?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=750&amp;fit=crop&amp;dpr=1  750w,
-            https://images.theconversation.com/files/626822/original/file-20241021-15-s9j2g0.jpg?ixlib=rb-4.1.0&amp;q=30&amp;auto=format,compress&amp;cs=srgb&amp;w=800&amp;fit=crop&amp;dpr=2 1508w,
-            https://images.theconversation.com/files/626822/original/file-20241021-15-s9j2g0.jpg?ixlib=rb-4.1.0&amp;q=15&amp;auto=format,compress&amp;cs=srgb&amp;w=800&amp;fit=crop&amp;dpr=3 2262w
+            https://images.theconversation.com/files/627242/original/file-20241022-15-i3cqn9.png?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=1  600w,
+            https://images.theconversation.com/files/627242/original/file-20241022-15-i3cqn9.png?ixlib=rb-4.1.0&amp;q=30&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=2 1200w,
+            https://images.theconversation.com/files/627242/original/file-20241022-15-i3cqn9.png?ixlib=rb-4.1.0&amp;q=15&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=3 1800w,
+            https://images.theconversation.com/files/627242/original/file-20241022-15-i3cqn9.png?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=750&amp;fit=crop&amp;dpr=1  750w,
+            https://images.theconversation.com/files/627242/original/file-20241022-15-i3cqn9.png?ixlib=rb-4.1.0&amp;q=30&amp;auto=format,compress&amp;cs=srgb&amp;w=800&amp;fit=crop&amp;dpr=2 1508w,
+            https://images.theconversation.com/files/627242/original/file-20241022-15-i3cqn9.png?ixlib=rb-4.1.0&amp;q=15&amp;auto=format,compress&amp;cs=srgb&amp;w=800&amp;fit=crop&amp;dpr=3 2262w
           "
-          src="https://images.theconversation.com/files/626822/original/file-20241021-15-s9j2g0.jpg?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=800&amp;fit=crop&amp;dpr=2" />
+          src="https://images.theconversation.com/files/627242/original/file-20241022-15-i3cqn9.png?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=800&amp;fit=crop&amp;dpr=2" />
 
-        <figcaption></figcaption>
+        <figcaption><span>State Library Victoria</span></figcaption>
       </figure>
 
       <p>
-        Some observers
+        While some observers
         <a href="http://nla.gov.au/nla.news-article17473372">welcomed</a> the
-        women’s disregard for convention. But others were highly critical.
+        women’s disregard for convention, others were highly critical.
       </p>
 
       <figure class="imgfloat-right">
         <img
+          class="clean_img"
           loading="lazy"
           alt=""
           sizes="(max-width: 599px) 100vw, (min-width: 600px) and (max-width: 1535px) 750px, (min-width: 1536px) 800px"
@@ -903,14 +1034,9 @@
         <a href="http://nla.gov.au/nla.news-article4462852">following a fad</a>.
       </p>
 
-      <p>
-        The women often attracted unwelcome attention and lewd comments,
-        especially when taking public transport to the beginning of each walk.
-      </p>
-
-      <div
-        class="not-prose mx-auto w-[min(calc(100%-40px),600px)] rounded-r-lg border-l-4 px-5 py-4">
-        <p class="font-mono typewriter text-justify leading-loose">
+      <!-- <div
+        class="not-prose standard_width mx-auto my-14 rounded-r-lg border-l-4 px-5">
+        <p class="typewriter text-justify font-mono leading-loose">
           Then comes the ordeal of the Railway Station. “Where to today, Miss?”
           from the porter. “Bet you don’t look so frisky when I see you tonight,
           ho ho!” Then the hopeful glances, as the train slows down, for a
@@ -920,8 +1046,13 @@
           opposite, more often than not, an exquisitely dressed young thing
           bound for Church.
         </p>
-        <p class="text-right font-base">- "Blossom" (member)</p>
-      </div>
+        <p class="pt-4 font-base">- "Blossom" (member)</p>
+      </div> -->
+
+      <p>
+        The women often attracted unwelcome attention and lewd comments,
+        especially when taking public transport to the beginning of each walk.
+      </p>
 
       <p>
         They felt relief at beginning the bushwalk, safe with friends and far
@@ -944,22 +1075,18 @@
           alt="Portrait of Alice Manfield (Guide Alice) (1878-1960), mountain guide, naturalist, chalet owner, photographer, and early feminist figure based at Mt Buffalo, Victoria, Australia"
           sizes="(max-width: 599px) 100vw, (min-width: 600px) and (max-width: 1535px) 750px, (min-width: 1536px) 800px"
           srcset="
-            https://images.theconversation.com/files/626808/original/file-20241021-15-3t463n.jpg?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=1  600w,
-            https://images.theconversation.com/files/626808/original/file-20241021-15-3t463n.jpg?ixlib=rb-4.1.0&amp;q=30&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=2 1200w,
-            https://images.theconversation.com/files/626808/original/file-20241021-15-3t463n.jpg?ixlib=rb-4.1.0&amp;q=15&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=3 1800w,
-            https://images.theconversation.com/files/626808/original/file-20241021-15-3t463n.jpg?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=750&amp;fit=crop&amp;dpr=1  750w,
-            https://images.theconversation.com/files/626808/original/file-20241021-15-3t463n.jpg?ixlib=rb-4.1.0&amp;q=30&amp;auto=format,compress&amp;cs=srgb&amp;w=800&amp;fit=crop&amp;dpr=2 1508w,
-            https://images.theconversation.com/files/626808/original/file-20241021-15-3t463n.jpg?ixlib=rb-4.1.0&amp;q=15&amp;auto=format,compress&amp;cs=srgb&amp;w=800&amp;fit=crop&amp;dpr=3 2262w
+            https://images.theconversation.com/files/627236/original/file-20241022-19-me39gn.png?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=1  600w,
+            https://images.theconversation.com/files/627236/original/file-20241022-19-me39gn.png?ixlib=rb-4.1.0&amp;q=30&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=2 1200w,
+            https://images.theconversation.com/files/627236/original/file-20241022-19-me39gn.png?ixlib=rb-4.1.0&amp;q=15&amp;auto=format,compress&amp;cs=srgb&amp;w=600&amp;fit=crop&amp;dpr=3 1800w,
+            https://images.theconversation.com/files/627236/original/file-20241022-19-me39gn.png?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=750&amp;fit=crop&amp;dpr=1  750w,
+            https://images.theconversation.com/files/627236/original/file-20241022-19-me39gn.png?ixlib=rb-4.1.0&amp;q=30&amp;auto=format,compress&amp;cs=srgb&amp;w=800&amp;fit=crop&amp;dpr=2 1508w,
+            https://images.theconversation.com/files/627236/original/file-20241022-19-me39gn.png?ixlib=rb-4.1.0&amp;q=15&amp;auto=format,compress&amp;cs=srgb&amp;w=800&amp;fit=crop&amp;dpr=3 2262w
           "
-          src="https://images.theconversation.com/files/626808/original/file-20241021-15-3t463n.jpg?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=800&amp;fit=crop&amp;dpr=2" />
+          src="https://images.theconversation.com/files/627236/original/file-20241022-19-me39gn.png?ixlib=rb-4.1.0&amp;q=45&amp;auto=format,compress&amp;cs=srgb&amp;w=800&amp;fit=crop&amp;dpr=2" />
 
         <figcaption>
           Alice Manfield (Guide Alice) prepared for a bushwalk &#183;
-          <span
-            ><a href="Permalink to original" target="_blank"
-              >State Library of Victoria</a
-            ></span
-          >
+          <span>State Library Victoria</span>
         </figcaption>
       </figure>
 
@@ -999,6 +1126,12 @@
         More than 100 years after its inception, the Melbourne Women’s Walking
         Club is still going strong. In fact, today it boasts its largest ever
         membership.
+      </p>
+
+      <p>
+        So, next time you set out for a hike, spare a thought for the
+        extraordinary Australian women who fought for their place on the
+        bushwalking track – and paved the way for generations to follow.
       </p>
 
       <hr class="-mb-2 w-full max-w-none" />
