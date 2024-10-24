@@ -12,7 +12,7 @@
   }
 
   .imgfloat-right {
-    @apply float-right mb-8 mt-0 md:ml-4 md:mr-[calc((100%-750px)/2)] md:w-[calc(750px/2)] 2xl:md:w-[calc(800px/2)] 2xl:mr-[calc((100%-800px)/2)];
+    @apply float-right mb-8 mt-0 md:ml-4 md:mr-[max(20px,calc((100%-750px)/2))] md:w-[calc(750px/2)] 2xl:md:w-[calc(800px/2)] 2xl:mr-[calc((100%-800px)/2)];
   }
 
   .imgfloat-right figcaption,
@@ -21,7 +21,7 @@
   }
 
   .imgfloat-left {
-    @apply float-left mb-8 mt-0 md:ml-[calc((100%-750px)/2)] md:mr-4 md:w-[calc(750px/2)] 2xl:md:w-[calc(800px/2)] 2xl:ml-[calc((100%-800px)/2)];
+    @apply float-left mb-8 mt-0 md:ml-[max(20px,calc((100%-750px)/2))] md:mr-4 md:w-[calc(750px/2)] 2xl:md:w-[calc(800px/2)] 2xl:ml-[calc((100%-800px)/2)];
   }
 }
 
@@ -142,7 +142,7 @@
   }
 
   .full_screen_media figcaption {
-    @apply absolute bottom-0 right-0 mr-4 w-fit text-nowrap bg-neutral-900/70 px-2 pt-1 font-base text-xs text-white opacity-100 sm:text-xs;
+    @apply absolute bottom-0 right-0 mr-4 hidden w-fit text-nowrap bg-neutral-900/70 px-2 pt-1 font-base text-xs text-white opacity-100 sm:block sm:text-xs;
   }
 }
 
